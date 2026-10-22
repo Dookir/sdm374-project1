@@ -7,4 +7,4 @@
 - Keep teacher-provided `Lab6/` files unchanged. Preserve existing experiment provenance and use new output directories for revised experiments.
 - Model prediction, validation error, and real simulator score are different quantities. Do not claim that minimizing a surrogate proves improved real performance.
 - Do not store SSH passwords, private keys, access tokens, virtual environments or runtime caches in Git. Repository SSH keys are outside the checkout.
-- Remote environment setup is complete; the expanded neural-network/nested-validation research remains pending. Environment smoke checks do not constitute model-quality experiments.
+- Remote environment setup and six neural architectures are implemented; formal neural training, model selection and nested-validation research remain pending. Architecture smoke checks do not constitute model-quality experiments.

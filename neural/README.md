@@ -74,3 +74,20 @@ python -m neural.inspect_architectures --device cuda
 
 结构参考：[Revisiting Deep Learning Models for Tabular Data](https://arxiv.org/abs/2106.11959)。
 本项目的建筑分支和二次趋势修正是待实验检验的设计选择，不是该论文对本数据集的结论。
+
+
+## 首轮训练与验证
+
+`python -m neural.train --out neural/runs/first_training_20261022`。
+先激活 `server/activate.sh`，再设置 `CUDA_VISIBLE_DEVICES` 为一张空闲卡的完整 UUID。
+程序启动时复查空闲状态，并要求仅可见一张卡；顺序训练，显存上限为该卡的 5%。
+
+六种网络 × 五个外层测试折 × 三个随机种子（2026/2027/2028）。每折训练集内部留出 20% 选早停轮次，随后用整个外层训练集按该轮次重训；测试标签不参与标准化、训练或早停。
+AdamW，学习率 0.001，weight decay 0.0001，batch 128；最多 1500 轮，150 轮无改善停止，每 5 轮检查。
+二次岭回归在各训练折内部按老师的五折方法选 alpha；CatBoost 使用此前固定参数作补充对照。
+
+`comparison.csv` 给出逐种子的平均指标和三种子预测平均后的 ensemble 指标；`oof_predictions.csv` 保留每行折外预测。
+MAE、RMSE 与低分区误差越小越好。`regret_at2` 为每折挑出预测最低的两个方案后，其最好的真实分数与该折真实最优的差距，再对五折取平均；越接近 0 越好。
+这是已有数据上的筛选实验，不能代替对全新权重的真实仿真，也不是未经使用的最终盲测集。首轮固定参数比较不等于系统调参结论。
+
+中断后使用完全相同的命令恢复，已完成实验会跳过；配置或代码改变时必须换结果目录。

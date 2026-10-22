@@ -37,6 +37,12 @@ offline/                 自行实现的离线模型比较与搜索
 二者均不能代替对新权重的真实评估。不同模型的最低预测值不能直接用于比较优化效果。
 MAE、RMSE、R² 用于检查模型预测能力，不是课程最终成绩。
 
+## 服务器开发环境
+
+代码开发与实验主目录已迁移到 A100 服务器 `/data/zengxiong/wuxinkai/sdm374-project1`。
+使用 Python 3.12 项目环境；进入仓库后执行 `source server/activate.sh`。
+详见 [服务器环境说明](server/README.md)。本地已有实验和环境元数据保留为历史记录。
+
 ## 运行
 
 当前实验使用默认 Python 3.14 环境，实际包版本记录于 `offline/requirements.txt` 与

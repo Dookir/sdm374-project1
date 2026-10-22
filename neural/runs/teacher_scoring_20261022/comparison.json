@@ -1,0 +1,77 @@
+[
+  {
+    "name": "original_baseline",
+    "teacher_prediction": 75.89570106874648,
+    "real_simulator_score": null,
+    "weights_file": "weights_original_baseline.json"
+  },
+  {
+    "name": "previous_catboost_conservative",
+    "teacher_prediction": 114.57692453118216,
+    "real_simulator_score": null,
+    "weights_file": "weights_previous_catboost_conservative.json",
+    "origin": "Historical CatBoost/HistGB search; not rerun"
+  },
+  {
+    "name": "measured_best",
+    "teacher_prediction": 130.64830075437834,
+    "real_simulator_score": null,
+    "weights_file": "weights_measured_best.json",
+    "measured_ramping": 115.76481925917324,
+    "measured_id": "p01969"
+  },
+  {
+    "name": "mlp_small",
+    "teacher_prediction": 110.7097069164461,
+    "real_simulator_score": null,
+    "weights_file": "weights_mlp_small.json",
+    "own_prediction": 77.75863393147786,
+    "seed_prediction_std": 9.34762635089644,
+    "search_iterations": 301
+  },
+  {
+    "name": "mlp_medium",
+    "teacher_prediction": 96.08131439436085,
+    "real_simulator_score": null,
+    "weights_file": "weights_mlp_medium.json",
+    "own_prediction": 78.83230082194011,
+    "seed_prediction_std": 4.3501577942707526,
+    "search_iterations": 1000
+  },
+  {
+    "name": "mlp_large",
+    "teacher_prediction": 133.281998521537,
+    "real_simulator_score": null,
+    "weights_file": "weights_mlp_large.json",
+    "own_prediction": 89.19864654541016,
+    "seed_prediction_std": 1.997842785119026,
+    "search_iterations": 341
+  },
+  {
+    "name": "resnet",
+    "teacher_prediction": 108.06812302378026,
+    "real_simulator_score": null,
+    "weights_file": "weights_resnet.json",
+    "own_prediction": 86.8534673055013,
+    "seed_prediction_std": 5.993158810102904,
+    "search_iterations": 343
+  },
+  {
+    "name": "building_mlp",
+    "teacher_prediction": 131.99725405221326,
+    "real_simulator_score": null,
+    "weights_file": "weights_building_mlp.json",
+    "own_prediction": 91.15946197509766,
+    "seed_prediction_std": 4.2135480170999395,
+    "search_iterations": 409
+  },
+  {
+    "name": "quadratic_residual",
+    "teacher_prediction": 75.89570775345742,
+    "real_simulator_score": null,
+    "weights_file": "weights_quadratic_residual.json",
+    "own_prediction": 87.67384084065755,
+    "seed_prediction_std": 6.499613591626857,
+    "search_iterations": 206
+  }
+]

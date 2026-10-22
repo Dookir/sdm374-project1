@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/data/zengxiong/wuxinkai/.venv/bin/python",
+    "Lab6/baseline.py",
+    "predict",
+    "--weights",
+    "neural/runs/teacher_scoring_20261022/weights_building_mlp.json"
+  ],
+  "stdout": {
+    "predicted_ramping": 131.99725405221326
+  }
+}

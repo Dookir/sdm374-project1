@@ -1,0 +1,47 @@
+{
+  "models": [
+    {
+      "seed": 2026,
+      "epochs": 270,
+      "checkpoint": "neural/runs/first_training_20261022/final_models/building_mlp_2026.pt",
+      "sha256": "93d006b0ecbb32b02470839ef53bc7f1f8da22a151f9105f3b5f6d2a4a26dcef"
+    },
+    {
+      "seed": 2027,
+      "epochs": 170,
+      "checkpoint": "neural/runs/first_training_20261022/final_models/building_mlp_2027.pt",
+      "sha256": "4de0defe15075cd4aef4ccead764a8e190e21d2e3e1421be29b4de2be7f8f08f"
+    },
+    {
+      "seed": 2028,
+      "epochs": 175,
+      "checkpoint": "neural/runs/first_training_20261022/final_models/building_mlp_2028.pt",
+      "sha256": "29fa64d92e4bd0d00e25ec9c4c287677057d3dac0014855519a9766f4079a873"
+    }
+  ],
+  "iterations": 409,
+  "own_prediction": 91.15946197509766,
+  "seed_prediction_std": 4.2135480170999395,
+  "history": [
+    {
+      "step": 0,
+      "best_own_prediction": 116.56614685058594
+    },
+    {
+      "step": 100,
+      "best_own_prediction": 91.81561279296875
+    },
+    {
+      "step": 200,
+      "best_own_prediction": 91.53048706054688
+    },
+    {
+      "step": 300,
+      "best_own_prediction": 91.15946960449219
+    },
+    {
+      "step": 400,
+      "best_own_prediction": 91.15946960449219
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "models": [
+    {
+      "seed": 2026,
+      "epochs": 320,
+      "checkpoint": "neural/runs/teacher_scoring_20261022/full_models/mlp_large_2026.pt",
+      "sha256": "2b81390e7964beb88c05a6f2379105d29de2d32d37ec5bb13b8406bba9cf7af2"
+    },
+    {
+      "seed": 2027,
+      "epochs": 145,
+      "checkpoint": "neural/runs/teacher_scoring_20261022/full_models/mlp_large_2027.pt",
+      "sha256": "56f77f937f083d6db69c92cf8a8848ee792a93e1c41d2cd0837ed1d3d8a1c4cd"
+    },
+    {
+      "seed": 2028,
+      "epochs": 230,
+      "checkpoint": "neural/runs/teacher_scoring_20261022/full_models/mlp_large_2028.pt",
+      "sha256": "91ca590cfb53013f0f9cb23b5d2356c87b0927ba26d4c11c0bf89a1f2ebefce3"
+    }
+  ],
+  "iterations": 341,
+  "own_prediction": 89.19864654541016,
+  "seed_prediction_std": 1.997842785119026,
+  "history": [
+    {
+      "step": 0,
+      "best_own_prediction": 114.767822265625
+    },
+    {
+      "step": 100,
+      "best_own_prediction": 89.46868133544922
+    },
+    {
+      "step": 200,
+      "best_own_prediction": 89.19865417480469
+    },
+    {
+      "step": 300,
+      "best_own_prediction": 89.19865417480469
+    }
+  ]
+}

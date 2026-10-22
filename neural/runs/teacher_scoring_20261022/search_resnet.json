@@ -1,0 +1,43 @@
+{
+  "models": [
+    {
+      "seed": 2026,
+      "epochs": 290,
+      "checkpoint": "neural/runs/teacher_scoring_20261022/full_models/resnet_2026.pt",
+      "sha256": "52b5853f6ee5b294e02abdd70e1c4b38d479ab5b5ac559d2768d44a918914a58"
+    },
+    {
+      "seed": 2027,
+      "epochs": 150,
+      "checkpoint": "neural/runs/teacher_scoring_20261022/full_models/resnet_2027.pt",
+      "sha256": "e9de7a685ea37084f37c074a83ae261ae55605b5ded7fe8250b3bee7e2824ce8"
+    },
+    {
+      "seed": 2028,
+      "epochs": 175,
+      "checkpoint": "neural/runs/teacher_scoring_20261022/full_models/resnet_2028.pt",
+      "sha256": "d04bc3bf8be3b0bc374ca3fdf4bde5e4dc1fdb7f340a8dcad1ded3d8560f1a41"
+    }
+  ],
+  "iterations": 343,
+  "own_prediction": 86.8534673055013,
+  "seed_prediction_std": 5.993158810102904,
+  "history": [
+    {
+      "step": 0,
+      "best_own_prediction": 105.17489624023438
+    },
+    {
+      "step": 100,
+      "best_own_prediction": 90.00920104980469
+    },
+    {
+      "step": 200,
+      "best_own_prediction": 86.85346984863281
+    },
+    {
+      "step": 300,
+      "best_own_prediction": 86.85346984863281
+    }
+  ]
+}

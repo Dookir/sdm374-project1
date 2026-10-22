@@ -132,3 +132,7 @@ x = torch.as_tensor(weights_3x7, dtype=torch.float32).reshape(1, 21)
 with torch.inference_mode():
     prediction = torch.stack([model(x) for model in models]).mean(0)
 ```
+
+## 老师脚本复测候选
+
+已为六种网络分别生成候选权重，并逐一运行原 `Lab6/baseline.py predict`，完整命令输出和对照见 [统一复测结果](runs/teacher_scoring_20261022)。这组候选没有超过原 baseline 的 75.895701；二次残差网络基本保留原权重。

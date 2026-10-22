@@ -1,6 +1,6 @@
 # 第一版神经网络结构
 
-所有结构已实现为 PyTorch 模块，供后续统一验证和寻优。**目前没有通过正式实验选出获胜网络。**
+六种结构已完成首轮五折、三种子训练。当前网络候选为 **building_mlp 三种子集成**，仍需后续调参与真实仿真检验。
 网络的自评分、训练损失和接口检查都不作为项目真实成绩。
 
 ## 输入和输出
@@ -68,8 +68,8 @@ python -m neural.inspect_architectures --device cuda
 验证 GPU 前向、参数梯度、输入梯度和 checkpoint 读写；它不报告网络优劣。
 结果默认写到仓库外的 `../network-architecture-check.json`。
 
-下一阶段再统一比较：多种子训练、早停、正则化、低分区误差、两次选择遗憾值及边界外推。
-第一轮训练参数建议 AdamW、lr=1e-3、weight_decay=1e-4、batch=128；这些是待验证的起点。
+首轮已完成多种子训练、内部早停、低分区误差和两次选择遗憾值比较；下一阶段研究正则化、输入/激活消融和边界外推。
+首轮使用 AdamW、lr=1e-3、weight_decay=1e-4、batch=128，未进行神经网络超参数搜索。
 模型选择依赖未用于训练的真实标签，不能用老师代理模型裁判新模型，也不能用网络最低自评分宣称胜出。
 
 结构参考：[Revisiting Deep Learning Models for Tabular Data](https://arxiv.org/abs/2106.11959)。
@@ -91,3 +91,44 @@ MAE、RMSE 与低分区误差越小越好。`regret_at2` 为每折挑出预测�
 这是已有数据上的筛选实验，不能代替对全新权重的真实仿真，也不是未经使用的最终盲测集。首轮固定参数比较不等于系统调参结论。
 
 中断后使用完全相同的命令恢复，已完成实验会跳过；配置或代码改变时必须换结果目录。
+
+
+## 首轮结果（2026-10-22）
+
+结果目录：[first_training_20261022](runs/first_training_20261022)。所有网络均完成 5 折 × 3 种子，共 90 组；神经网络下表使用三种子平均预测，对照为单个模型。
+
+| 模型 | 折外 MAE | 真实最低20%区域 MAE | 每折 regret@2 均值 |
+| --- | ---: | ---: | ---: |
+| catboost_reference | 4.388 | 5.063 | 0.795 |
+| building_mlp | 4.505 | 4.267 | 0.342 |
+| mlp_large | 4.698 | 4.668 | 0.403 |
+| resnet | 5.707 | 5.656 | 1.721 |
+| quadratic_residual | 5.810 | 6.058 | 0.403 |
+| mlp_small | 5.867 | 6.116 | 0.403 |
+| mlp_medium | 5.983 | 6.246 | 0.403 |
+| quadratic_ridge | 6.927 | 9.675 | 2.493 |
+
+本轮分楼 MLP 的整体 MAE 比 CatBoost 高约 2.7%，但低分区域与两次选择表现更好。只有五个测试折，不能据此认定它对新权重一定优于 CatBoost。
+其入选两组预测存在约 5.39 的平均低估，后续寻优仍须检查外推与多模型分歧。
+全量训练模型在 `final_models/`；训练轮次取各种子五折内部早停最佳轮次的中位数（270、170、175），全量训练误差不作为验证精度。
+
+复核与绘图：
+
+```bash
+CUDA_VISIBLE_DEVICES= python -m neural.audit_results neural/runs/first_training_20261022
+CUDA_VISIBLE_DEVICES= python -m neural.plot_results neural/runs/first_training_20261022
+python -m unittest -v neural.test_models neural.test_training
+```
+
+在服务器上加载三个最终模型并取预测平均：
+
+```python
+from pathlib import Path
+import torch
+from neural.models import load_surrogate
+folder = Path("neural/runs/first_training_20261022/final_models")
+models = [load_surrogate(folder / f"building_mlp_{seed}.pt") for seed in (2026, 2027, 2028)]
+x = torch.as_tensor(weights_3x7, dtype=torch.float32).reshape(1, 21)
+with torch.inference_mode():
+    prediction = torch.stack([model(x) for model in models]).mean(0)
+```

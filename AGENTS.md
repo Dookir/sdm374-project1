@@ -7,4 +7,4 @@
 - Keep teacher-provided `Lab6/` files unchanged. Preserve existing experiment provenance and use new output directories for revised experiments.
 - Model prediction, validation error, and real simulator score are different quantities. Do not claim that minimizing a surrogate proves improved real performance.
 - Do not store SSH passwords, private keys, access tokens, virtual environments or runtime caches in Git. Repository SSH keys are outside the checkout.
-- Remote environment setup and six neural architectures are implemented; formal neural training, model selection and nested-validation research remain pending. Architecture smoke checks do not constitute model-quality experiments.
+- Remote setup and six neural architectures are implemented. First fixed-parameter benchmark completed: 5 outer folds x 3 seeds x 6 networks, one GPU; see neural/runs/first_training_20261022. Building MLP ensemble is the current neural candidate. Systematic tuning and full nested model-selection research remain pending; existing-data OOF results do not establish new-weight simulator performance.

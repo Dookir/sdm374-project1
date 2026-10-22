@@ -1,0 +1,18 @@
+{
+  "inner_alpha": 100.0,
+  "outer_alpha": 100.0,
+  "catboost": {
+    "iterations": 1600,
+    "learning_rate": 0.08,
+    "depth": 5,
+    "l2_leaf_reg": 10,
+    "loss_function": "RMSE",
+    "thread_count": 4,
+    "random_seed": 2026,
+    "verbose": false,
+    "random_strength": 0.1,
+    "allow_writing_files": false,
+    "task_type": "CPU"
+  },
+  "note": "CatBoost fixed historical parameters; no new tuning on outer folds."
+}

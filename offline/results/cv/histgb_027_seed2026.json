@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "id": "histgb_027",
+    "family": "histgb",
+    "params": {
+      "min_samples_leaf": 15,
+      "max_leaf_nodes": 31,
+      "max_iter": 900,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0
+    }
+  },
+  "seed": 2026,
+  "seconds": 5.710077708994504,
+  "metrics": {
+    "mae": 5.059660193178601,
+    "rmse": 7.641393174846873,
+    "r2": 0.7703731408431782,
+    "low20_mae": 5.924472624377853,
+    "top10_true_mean": 127.1459821424497,
+    "top10_true_best_mean": 118.72719546607114
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "id": "extratrees_010",
+    "family": "extratrees",
+    "params": {
+      "n_estimators": 400,
+      "min_samples_leaf": 4,
+      "max_features": 1.0,
+      "max_depth": 24
+    }
+  },
+  "seed": 2026,
+  "seconds": 1.3165967089880724,
+  "metrics": {
+    "mae": 5.73421064124552,
+    "rmse": 8.57070380848438,
+    "r2": 0.7111245953830525,
+    "low20_mae": 7.539230264877769,
+    "top10_true_mean": 127.44151238013646,
+    "top10_true_best_mean": 118.72719546607114
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "selected": "catboost_011",
+  "metrics": {
+    "mae": 4.684780676070403,
+    "rmse": 7.184140585508935,
+    "r2": 0.7970259814105441,
+    "low20_mae": 5.285213041234946,
+    "top10_true_mean": 126.51274936270902,
+    "top10_true_best_mean": 118.66603551542539
+  },
+  "review_specs": [
+    {
+      "id": "catboost_011",
+      "family": "catboost",
+      "params": {
+        "random_strength": 0.1,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 10.0,
+        "iterations": 1600,
+        "depth": 5
+      }
+    },
+    {
+      "id": "histgb_012",
+      "family": "histgb",
+      "params": {
+        "min_samples_leaf": 8,
+        "max_leaf_nodes": 7,
+        "max_iter": 900,
+        "learning_rate": 0.08,
+        "l2_regularization": 5.0
+      }
+    }
+  ],
+  "review_weights": [
+    0.5310489696031604,
+    0.46895103039683966
+  ],
+  "selected_spec": {
+    "id": "catboost_011",
+    "family": "catboost",
+    "params": {
+      "random_strength": 0.1,
+      "learning_rate": 0.08,
+      "l2_leaf_reg": 10.0,
+      "iterations": 1600,
+      "depth": 5
+    }
+  },
+  "baseline_spec": {
+    "id": "ridge2_000",
+    "family": "ridge2",
+    "params": {
+      "alpha": 100.0
+    }
+  },
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "selection_rule": "MAE within 5%; lowest top10 mean (0.1 tie); low20 MAE",
+  "warning": "Development CV is used for tuning, selection and ensemble weights, not an independent test.",
+  "benchmark_seconds": 276.8771792500047
+}

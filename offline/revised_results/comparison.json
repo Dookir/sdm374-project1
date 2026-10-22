@@ -1,0 +1,253 @@
+{
+  "primary_score": "teacher baseline.predict using original Lab6/model.npz; lower is better",
+  "official_evaluator_available": false,
+  "warning": "Teacher prediction and learned-model prediction are estimates. Neither is a new simulator measurement.",
+  "records": [
+    {
+      "name": "teacher_original",
+      "teacher_prediction": 75.89570106874649,
+      "measured_ramping": null,
+      "measured_candidate_id": null,
+      "official_evaluator_score": null,
+      "learned_model_prediction": 116.11346349956264,
+      "auxiliary_model_disagreement": 4.420037921428386,
+      "nearest_training_distance": 0.6593494343995667,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.33331054912550917,
+          0.0,
+          0.6666894508744908,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4296526505335242,
+          0.5703473494664758
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.6424900824337256,
+          0.35750991756627437
+        ]
+      ],
+      "teacher_prediction_delta": 0.0,
+      "beats_teacher_original_prediction": false
+    },
+    {
+      "name": "previous_conservative",
+      "teacher_prediction": 114.57692453118216,
+      "measured_ramping": null,
+      "measured_candidate_id": null,
+      "official_evaluator_score": null,
+      "learned_model_prediction": 102.82777375517665,
+      "auxiliary_model_disagreement": 0.007353596222771536,
+      "nearest_training_distance": 0.2206154870613257,
+      "weights": [
+        [
+          0.06606348420879606,
+          1.1487703206816469e-10,
+          0.07347868801479633,
+          0.12699758104046122,
+          0.13896300429702105,
+          0.5346269475381178,
+          0.05987029478593056
+        ],
+        [
+          7.131878689993192e-05,
+          1.2961276478149794e-05,
+          0.004227957613140972,
+          0.03807604012206991,
+          0.00031817176726354503,
+          0.443425500736609,
+          0.5138680496975385
+        ],
+        [
+          0.005644785479014638,
+          0.005321836820454735,
+          0.045702209711059,
+          0.5550037429794822,
+          0.10496706039380913,
+          0.2597634290182425,
+          0.023596935597937636
+        ]
+      ],
+      "teacher_prediction_delta": 38.68122346243567,
+      "beats_teacher_original_prediction": false
+    },
+    {
+      "name": "previous_aggressive",
+      "teacher_prediction": 113.17394667905747,
+      "measured_ramping": null,
+      "measured_candidate_id": null,
+      "official_evaluator_score": null,
+      "learned_model_prediction": 102.75759331692015,
+      "auxiliary_model_disagreement": 0.13962970372209968,
+      "nearest_training_distance": 0.2204816888255783,
+      "weights": [
+        [
+          0.06480435222410967,
+          1.1487703206816469e-10,
+          0.07653502127961498,
+          0.12699758104046122,
+          0.13896300429702105,
+          0.5229630008718043,
+          0.0697370401721118
+        ],
+        [
+          7.131878689993192e-05,
+          9.906881819798127e-06,
+          0.06042377231476879,
+          0.0339944798041572,
+          0.003169493636542907,
+          0.44465879357990074,
+          0.4576722349959107
+        ],
+        [
+          0.005644785479014638,
+          0.005321836820454735,
+          0.029665376711191203,
+          0.6084913030002798,
+          0.03721796331796523,
+          0.2996345578402899,
+          0.014024176830804421
+        ]
+      ],
+      "teacher_prediction_delta": 37.278245610310975,
+      "beats_teacher_original_prediction": false
+    },
+    {
+      "name": "measured_best",
+      "teacher_prediction": 130.64830075437834,
+      "measured_ramping": 115.76481925917324,
+      "measured_candidate_id": "p01969",
+      "official_evaluator_score": null,
+      "learned_model_prediction": 116.89962318615733,
+      "auxiliary_model_disagreement": 1.0794187642141098,
+      "nearest_training_distance": 1.4901161193847656e-08,
+      "weights": [
+        [
+          0.18820192424833943,
+          0.06360466420059784,
+          0.20218812019519208,
+          0.2143194240587854,
+          0.033248929385831,
+          0.21981267379719566,
+          0.07862426411405848
+        ],
+        [
+          0.23588131097397017,
+          0.14100310763021828,
+          0.08205770080328545,
+          0.05530500458165258,
+          0.12974305755590243,
+          0.2875770324599347,
+          0.06843278599503624
+        ],
+        [
+          0.16258951876772473,
+          0.029255805470118926,
+          0.04458718056535448,
+          0.06959649096135122,
+          0.11341991678227721,
+          0.3471329386268938,
+          0.23341814882627956
+        ]
+      ],
+      "teacher_prediction_delta": 54.75259968563185,
+      "beats_teacher_original_prediction": false
+    },
+    {
+      "name": "recommended",
+      "teacher_prediction": 75.89570106874649,
+      "measured_ramping": null,
+      "measured_candidate_id": null,
+      "official_evaluator_score": null,
+      "learned_model_prediction": 116.11346349956264,
+      "auxiliary_model_disagreement": 4.420037921428386,
+      "nearest_training_distance": 0.6593494343995667,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.33331054912550917,
+          0.0,
+          0.6666894508744908,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4296526505335242,
+          0.5703473494664758
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.6424900824337256,
+          0.35750991756627437
+        ]
+      ],
+      "teacher_prediction_delta": 0.0,
+      "beats_teacher_original_prediction": false
+    },
+    {
+      "name": "experimental_challenger",
+      "teacher_prediction": 79.50801244679727,
+      "measured_ramping": null,
+      "measured_candidate_id": null,
+      "official_evaluator_score": null,
+      "learned_model_prediction": 108.14856591980526,
+      "auxiliary_model_disagreement": 0.14069857728135807,
+      "nearest_training_distance": 0.6072902114208479,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.012084460045846818,
+          0.31210138698652373,
+          0.0,
+          0.6347971965928834,
+          0.04101695637474628
+        ],
+        [
+          0.0,
+          0.023416620582480452,
+          0.02209620312659302,
+          0.0,
+          0.0,
+          0.3974538462714957,
+          0.5570333300194308
+        ],
+        [
+          0.0,
+          0.007247709216687579,
+          0.02106796695442098,
+          0.012533160469767955,
+          0.026650526529384613,
+          0.603812184861144,
+          0.32868845196859486
+        ]
+      ],
+      "teacher_prediction_delta": 3.6123113780507765,
+      "beats_teacher_original_prediction": false
+    }
+  ]
+}

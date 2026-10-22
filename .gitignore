@@ -1,0 +1,27 @@
+# macOS and Python caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and temporary files
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Local server login automation can contain credentials
+/auto_login_server*.sh
+*.pem
+*.key
+.netrc
+
+# Training data, saved models and experimental results are intentionally versioned.

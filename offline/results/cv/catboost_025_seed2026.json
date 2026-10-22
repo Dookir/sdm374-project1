@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "id": "catboost_025",
+    "family": "catboost",
+    "params": {
+      "random_strength": 1.0,
+      "learning_rate": 0.08,
+      "l2_leaf_reg": 10.0,
+      "iterations": 1000,
+      "depth": 6
+    }
+  },
+  "seed": 2026,
+  "seconds": 4.71129370899871,
+  "metrics": {
+    "mae": 4.672357908290761,
+    "rmse": 7.245503312896279,
+    "r2": 0.7935500832873709,
+    "low20_mae": 5.267566859344437,
+    "top10_true_mean": 126.99541296045541,
+    "top10_true_best_mean": 118.72719546607114
+  }
+}

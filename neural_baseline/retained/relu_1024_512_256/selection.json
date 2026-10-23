@@ -1,0 +1,31 @@
+{
+  "rank": 5,
+  "name": "relu_1024_512_256",
+  "config": {
+    "hidden": [
+      1024,
+      512,
+      256
+    ],
+    "activation": "relu",
+    "dropout": 0.1,
+    "weight_decay": 0.001,
+    "learning_rate": 0.001,
+    "batch_size": 256
+  },
+  "predicted_ramping": 71.96004486083984,
+  "original_candidate": "wide1024_base_2026_e50",
+  "seed": 2026,
+  "epoch": 50,
+  "kind": "single",
+  "source_round": "expanded_run_20261023",
+  "models": [
+    {
+      "file": "model.pt",
+      "sha256": "c3864f3832dd413c98bf2935a866050717592e8e00f7ed7032bc66584e992bc6",
+      "original_source": "neural_baseline/results/expanded_run_20261023/models/wide1024_base_2026/epoch50.pt"
+    }
+  ],
+  "weights_sha256": "4f02cc5d65d0b7176a0946fa3765cf1d467b240b84a6bce563c32d1ad099a80c",
+  "baseline_prediction_auxiliary_only": 100.52873009556282
+}

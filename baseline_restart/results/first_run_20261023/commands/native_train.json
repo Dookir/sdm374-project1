@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/data/zengxiong/wuxinkai/.venv/bin/python",
+    "/data/zengxiong/wuxinkai/sdm374-project1/Lab6/baseline.py",
+    "train",
+    "--train",
+    "/data/zengxiong/wuxinkai/sdm374-project1/Lab6/dataset_same8/train.csv",
+    "--model",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/models/native_train.npz"
+  ],
+  "stdout": "交叉验证选出的 alpha：100\n模型已保存：/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/models/native_train.npz\n",
+  "stderr": ""
+}

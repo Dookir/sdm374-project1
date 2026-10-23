@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/data/zengxiong/wuxinkai/.venv/bin/python",
+    "/data/zengxiong/wuxinkai/sdm374-project1/Lab6/baseline.py",
+    "optimize",
+    "--model",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/models/native_train.npz",
+    "--output",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/weights/native_train_then_optimize.json"
+  ],
+  "stdout": "[\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.33331054916418223,\n    0.0,\n    0.6666894508358179,\n    0.0\n  ],\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.42965265076837256,\n    0.5703473492316274\n  ],\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.6424900824433292,\n    0.35750991755667094\n  ]\n]\n",
+  "stderr": ""
+}

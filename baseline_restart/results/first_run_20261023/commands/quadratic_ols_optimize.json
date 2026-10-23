@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/data/zengxiong/wuxinkai/.venv/bin/python",
+    "/data/zengxiong/wuxinkai/sdm374-project1/Lab6/baseline.py",
+    "optimize",
+    "--model",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/models/quadratic_ols.npz",
+    "--output",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/weights/quadratic_ols.json"
+  ],
+  "stdout": "[\n  [\n    0.2687873682615359,\n    0.0,\n    0.0,\n    0.04819975468197124,\n    0.0,\n    0.6830128770564932,\n    0.0\n  ],\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.2824460456524128,\n    0.7175539543475872\n  ],\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.6338996205089004,\n    0.36610037949109964\n  ]\n]\n",
+  "stderr": ""
+}

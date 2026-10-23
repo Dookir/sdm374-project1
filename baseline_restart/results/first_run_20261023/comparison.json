@@ -1,0 +1,183 @@
+[
+  {
+    "name": "provided_baseline",
+    "teacher_script_score": 75.89570106874648,
+    "weights": "Lab6/weights.json",
+    "generating_model": null,
+    "model_info": null,
+    "search_info": null
+  },
+  {
+    "name": "provided_model_native_optimize",
+    "teacher_script_score": 75.89570106874649,
+    "weights": "baseline_restart/results/first_run_20261023/weights/provided_model_native_optimize.json",
+    "generating_model": "Lab6/model.npz",
+    "model_info": {
+      "source": "unchanged supplied teacher model"
+    },
+    "search_info": null
+  },
+  {
+    "name": "native_train_then_optimize",
+    "teacher_script_score": 75.8957010687465,
+    "weights": "baseline_restart/results/first_run_20261023/weights/native_train_then_optimize.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/native_train.npz",
+    "model_info": {
+      "alpha": 100.0,
+      "source": "unmodified baseline.py train"
+    },
+    "search_info": null
+  },
+  {
+    "name": "linear_ols",
+    "teacher_script_score": 121.85023139733948,
+    "weights": "baseline_restart/results/first_run_20261023/weights/linear_ols.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/linear_ols.npz",
+    "model_info": {
+      "degree": 1,
+      "kind": "ols",
+      "alpha": 0.0,
+      "rows": 2048,
+      "feature_count": 21
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_ols",
+    "teacher_script_score": 76.75130376764211,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_ols.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_ols.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "ols",
+      "alpha": 0.0,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_ridge_0.1",
+    "teacher_script_score": 76.74890798879983,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_ridge_0.1.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_ridge_0.1.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "ridge",
+      "alpha": 0.1,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_ridge_1",
+    "teacher_script_score": 76.72758825565968,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_ridge_1.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_ridge_1.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "ridge",
+      "alpha": 1.0,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_ridge_10",
+    "teacher_script_score": 76.53674034572762,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_ridge_10.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_ridge_10.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "ridge",
+      "alpha": 10.0,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_ridge_100",
+    "teacher_script_score": 75.8957010687465,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_ridge_100.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_ridge_100.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "ridge",
+      "alpha": 100.0,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_ridge_1000",
+    "teacher_script_score": 78.29516098733265,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_ridge_1000.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_ridge_1000.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "ridge",
+      "alpha": 1000.0,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_lasso_0.01",
+    "teacher_script_score": 76.14756002131611,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_lasso_0.01.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_lasso_0.01.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "lasso",
+      "alpha": 0.01,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_lasso_0.1",
+    "teacher_script_score": 78.26668646728884,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_lasso_0.1.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_lasso_0.1.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "lasso",
+      "alpha": 0.1,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "quadratic_lasso_1",
+    "teacher_script_score": 89.73551866657657,
+    "weights": "baseline_restart/results/first_run_20261023/weights/quadratic_lasso_1.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/quadratic_lasso_1.npz",
+    "model_info": {
+      "degree": 2,
+      "kind": "lasso",
+      "alpha": 1.0,
+      "rows": 2048,
+      "feature_count": 252
+    },
+    "search_info": null
+  },
+  {
+    "name": "provided_model_expanded_starts",
+    "teacher_script_score": 75.89570106874648,
+    "weights": "baseline_restart/results/first_run_20261023/weights/provided_model_expanded_starts.json",
+    "generating_model": "baseline_restart/results/first_run_20261023/models/provided_model_expanded_starts.npz",
+    "model_info": {
+      "source": "unchanged teacher coefficients",
+      "starts": 1384,
+      "optimizer": "unchanged baseline.py optimize"
+    },
+    "search_info": null
+  }
+]

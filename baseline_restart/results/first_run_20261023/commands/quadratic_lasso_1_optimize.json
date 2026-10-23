@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/data/zengxiong/wuxinkai/.venv/bin/python",
+    "/data/zengxiong/wuxinkai/sdm374-project1/Lab6/baseline.py",
+    "optimize",
+    "--model",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/models/quadratic_lasso_1.npz",
+    "--output",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/weights/quadratic_lasso_1.json"
+  ],
+  "stdout": "[\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.3234659836066942,\n    0.0,\n    0.6765340163933058,\n    0.0\n  ],\n  [\n    0.0,\n    0.0,\n    0.21429913529330968,\n    0.0,\n    0.0,\n    0.7857008647066904,\n    0.0\n  ],\n  [\n    0.0,\n    0.0,\n    0.2521841298298936,\n    0.0,\n    0.0,\n    0.7478158701701065,\n    0.0\n  ]\n]\n",
+  "stderr": ""
+}

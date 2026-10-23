@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/data/zengxiong/wuxinkai/.venv/bin/python",
+    "/data/zengxiong/wuxinkai/sdm374-project1/Lab6/baseline.py",
+    "optimize",
+    "--model",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/models/quadratic_ridge_10.npz",
+    "--output",
+    "/data/zengxiong/wuxinkai/sdm374-project1/baseline_restart/results/first_run_20261023/weights/quadratic_ridge_10.json"
+  ],
+  "stdout": "[\n  [\n    0.23080723703405476,\n    0.0,\n    0.0,\n    0.08939692826245282,\n    0.0,\n    0.6797958347034925,\n    0.0\n  ],\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.3040265169763926,\n    0.6959734830236074\n  ],\n  [\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.0,\n    0.6344695085956342,\n    0.3655304914043658\n  ]\n]\n",
+  "stderr": ""
+}

@@ -1,9 +1,10 @@
 # SDM374 Project 1 / Week7
 
-按老师原始 baseline 的结构重新开始：**生成模型参数 → 原 optimize 寻找权重 → 原 predict 评分**。当前方案只按原评分脚本的输出排序。
+当前按最新指令训练神经网络，并固定老师评分结构：**训练网络参数 → 投影梯度寻找3×7权重 → 原 predict 评分**。所有候选只按原评分脚本输出排序。
 
 - `Lab6/`：老师原始模型、程序、权重与2048条数据，保持原样。
-- `baseline_restart/`：重新规划后的课程回归算法实现。
+- `neural_baseline/`：当前神经网络训练、权重寻优与固定原程序评分，详见 [网络计划](neural_baseline/PLAN.md)。
+- `baseline_restart/`：保留的课程回归对照与原程序复现。
 - `server/`：服务器环境与激活入口。
 - `SDM374_Project1_v3.pptx`：项目课件。
 
@@ -20,3 +21,5 @@ CUDA_VISIBLE_DEVICES= python -u -m baseline_restart.run
 此前树模型、神经网络及其结果已退出当前工作目录。可从 Git 标签 `archive-before-baseline-restart-20261023` 或服务器同名归档文件夹恢复。
 
 第一轮已完成14个对照，尚未超过原baseline；推荐权重保留原方案。结果见 [原程序评分对照](baseline_restart/results/first_run_20261023/README.md)。
+
+当前神经网络训练入口：`python -u -m neural_baseline.run`。启动前必须选择一张空闲GPU的完整UUID。回归入口仍只需CPU。

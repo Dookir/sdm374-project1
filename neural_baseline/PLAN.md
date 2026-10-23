@@ -38,3 +38,7 @@ python -u -m neural_baseline.run
 ```
 
 输出为 models/检查点与训练曲线数据、weights/候选、commands/原评分命令和stdout、comparison.csv、complete.json、weights_recommended.json。保存/恢复预测一致、原文件哈希、输入梯度与投影须核对。同配置中断重跑可保留完成试验；代码或配置变化使用新目录。
+
+## 本轮完成状态
+
+12次训练、49份原程序评分已完成。最低神经网络分数88.140128，高于baseline75.895701；按既定规则保留原权重。结果与检查点见 [第一轮产物](results/first_run_20261023)。

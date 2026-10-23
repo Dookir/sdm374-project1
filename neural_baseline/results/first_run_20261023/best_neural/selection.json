@@ -1,0 +1,17 @@
+{
+  "selection_criterion": "lowest unchanged original teacher CLI score among neural candidates",
+  "trial": "mlp128_relu_2027_e100",
+  "architecture": "mlp128_relu",
+  "epoch": 100,
+  "kind": "single",
+  "teacher_script_score": 88.14012807093701,
+  "baseline_score": 75.89570106874648,
+  "beats_baseline": false,
+  "models": [
+    {
+      "file": "model.pt",
+      "source": "neural_baseline/results/first_run_20261023/models/mlp128_relu_2027/epoch100.pt",
+      "sha256": "c134d010573c0f914bd58863a0f5dca70363af1c56a1523e233c13ca87e71891"
+    }
+  ]
+}

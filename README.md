@@ -1,25 +1,38 @@
 # SDM374 Project 1 / Week7
 
-当前按最新指令训练神经网络，并固定老师评分结构：**训练网络参数 → 投影梯度寻找3×7权重 → 原 predict 评分**。所有候选只按原评分脚本输出排序。
+当前按最新指令使用神经网络：**训练网络参数 → 投影梯度寻找3×7权重 → 原 baseline.py predict 评分**。
+候选最终只按原评分程序输出排序，固定使用原 Lab6/model.npz。
 
-- `Lab6/`：老师原始模型、程序、权重与2048条数据，保持原样。
-- `neural_baseline/`：当前神经网络训练、权重寻优与固定原程序评分，详见 [网络计划](neural_baseline/PLAN.md)。
-- `baseline_restart/`：保留的课程回归对照与原程序复现。
-- `server/`：服务器环境与激活入口。
-- `SDM374_Project1_v3.pptx`：项目课件。
+## 目录
 
-详细方案、前两周课程算法对应页码和运行步骤见 [重新开始的计划](baseline_restart/PLAN.md)。
+- Lab6/：老师原始材料、模型、权重和2048行数据，保持原样。
+- neural_baseline/：当前神经网络实现，[结构与训练计划](neural_baseline/PLAN.md)。
+- baseline_restart/：保留的线性/多项式/L1/L2回归对照。
+- server/：服务器环境与激活入口。
+
+## 本轮结果
+
+[神经网络第一轮](neural_baseline/results/first_run_20261023)：4种结构、3个种子、12次单卡GPU训练，49个原程序评分对照。
+最低网络候选为中型ReLU、种子2027、第100轮，原程序评分88.140128；原baseline为75.895701，因此推荐权重仍保留原方案。
+最佳网络和对应权重在结果目录的 best_neural/；推荐提交权重为 weights_recommended.json。
+
+## 服务器运行
 
 ```bash
 cd /data/zengxiong/wuxinkai/sdm374-project1
 source server/activate.sh
-CUDA_VISIBLE_DEVICES= python -u -m baseline_restart.run
+nvidia-smi
+# 先选一张空闲卡的完整UUID，替换下面占位值；只能一张。
+export CUDA_VISIBLE_DEVICES=<GPU_UUID>
+python -u -m neural_baseline.run --out neural_baseline/results/new_run
 ```
 
-所有候选评分固定调用 `python Lab6/baseline.py predict --weights <候选.json>`，评分模型始终为原 `Lab6/model.npz`。生成参数与评分参数分别保存，原文件不覆盖。
+完成后的目录禁止覆盖。训练检查点固定为100/300/600轮，不按MAE筛选；每份权重立即交给原程序评分。
 
-此前树模型、神经网络及其结果已退出当前工作目录。可从 Git 标签 `archive-before-baseline-restart-20261023` 或服务器同名归档文件夹恢复。
+```bash
+CUDA_VISIBLE_DEVICES= python -m unittest -v neural_baseline.test_neural
+CUDA_VISIBLE_DEVICES= python -m neural_baseline.audit neural_baseline/results/first_run_20261023
+python Lab6/baseline.py predict --weights neural_baseline/results/first_run_20261023/best_neural/weights.json
+```
 
-第一轮已完成14个对照，尚未超过原baseline；推荐权重保留原方案。结果见 [原程序评分对照](baseline_restart/results/first_run_20261023/README.md)。
-
-当前神经网络训练入口：`python -u -m neural_baseline.run`。启动前必须选择一张空闲GPU的完整UUID。回归入口仍只需CPU。
+旧树模型与旧神经网络实验退出当前目录，保存在 Git 标签 archive-before-baseline-restart-20261023 和服务器同名归档目录。当前使用新的 neural_baseline 流程。

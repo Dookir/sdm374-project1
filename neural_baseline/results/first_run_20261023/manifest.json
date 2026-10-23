@@ -1,0 +1,80 @@
+{
+  "protocol": "Train on original CSV ramping -> neural projected-gradient weight search -> unchanged Lab6/baseline.py predict, never a generated scoring model. ONLY teacher_script_score ranks candidates.",
+  "configs": {
+    "mlp64_relu": {
+      "hidden": [
+        64,
+        32
+      ],
+      "activation": "relu",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "mlp128_relu": {
+      "hidden": [
+        128,
+        64
+      ],
+      "activation": "relu",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "mlp128_tanh": {
+      "hidden": [
+        128,
+        64
+      ],
+      "activation": "tanh",
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "mlp256_deep": {
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "activation": "relu",
+      "dropout": 0.1,
+      "weight_decay": 0.01
+    }
+  },
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "epochs": 600,
+  "checkpoints": [
+    100,
+    300,
+    600
+  ],
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "minimum_lr": 1e-05,
+    "batch": 128,
+    "target": "original train.csv ramping",
+    "criterion": "normalized MSE, diagnostic only",
+    "fixed_epoch_schedule": true
+  },
+  "gpu_uuid": "GPU-35f69b9c-b353-5b79-ba33-a0fb1c023c43",
+  "cuda_device_count": 1,
+  "protected_files": {
+    "Lab6/requirements.txt": "2be42120a663f20346fff73f7b7fc20fa73ed8af14f2c0047b264a7855e4aafa",
+    "Lab6/README.md": "d347d24340df9ecdb38b72a37a795cc9748ce9568041c54143a393c022443355",
+    "Lab6/baseline.py": "7a73929d4342759623fc48e28427927a9d653ad7eb711cdffee1c1b458e82a1c",
+    "Lab6/weights.json": "d2d1d2b00203ca739462caa35d0efe29f59c8671d4af04effac4d8d054c0178e",
+    "Lab6/model.npz": "fe7c242f56f36f3a96c79f332e56af39c68b69ea0c41e169cc8cd109231ca05e",
+    "Lab6/dataset_same8/manifest.json": "ba0c8f559c4d744bb670ead387b8585c2adb5ace35c616577093ea2fce16504f",
+    "Lab6/dataset_same8/train.csv": "877b5f8ee265245dd693148a5d7b11f28f48b426e43ac3ac1be8b7a934249023",
+    "Lab6/dataset_same8/README.md": "4688cbb117d583c1acd9ab5e29d20c865ab93bb2f162d4f36536ba244a704d2c"
+  },
+  "source_sha256": {
+    "neural_baseline/models.py": "1ae524b2b1bdb710934879b4084fd68ff1d45b1c76870923ff9222970544a0da",
+    "neural_baseline/run.py": "11a13318141b62215052e1d87abe255b37c7ee72fdb47e7864f956aecf564ba6"
+  },
+  "torch_version": "2.5.1+cu121",
+  "base_commit": "c510c0dc9d374412e68b25344788d78e4c6c046f"
+}

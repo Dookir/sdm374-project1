@@ -1,0 +1,25 @@
+{
+  "state": "complete",
+  "scored": 49,
+  "training_trials": 12,
+  "selected": "original_baseline",
+  "selected_score": 75.89570106874648,
+  "baseline_score": 75.89570106874648,
+  "best_neural": {
+    "name": "mlp128_relu_2027_e100",
+    "teacher_script_score": 88.14012807093701,
+    "weights": "neural_baseline/results/first_run_20261023/weights/mlp128_relu_2027_e100.json",
+    "kind": "single",
+    "architecture": "mlp128_relu",
+    "seed": 2027,
+    "epoch": 100,
+    "checkpoint": "neural_baseline/results/first_run_20261023/models/mlp128_relu_2027/epoch100.pt",
+    "checkpoint_exact": true
+  },
+  "improvement": 0.0,
+  "teacher_files_unchanged": true,
+  "cuda_device_count": 1,
+  "gpu_uuid": "GPU-35f69b9c-b353-5b79-ba33-a0fb1c023c43",
+  "peak_tensor_memory_bytes": 72432128,
+  "elapsed_seconds": 498.8245360702276
+}

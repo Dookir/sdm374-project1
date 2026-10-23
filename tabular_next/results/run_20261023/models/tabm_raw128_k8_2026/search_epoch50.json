@@ -1,0 +1,32 @@
+{
+  "predicted_ramping": 96.174072265625,
+  "start_count": 101,
+  "history": [
+    {
+      "method": "projected_gradient",
+      "iteration": 0,
+      "predicted_ramping": 106.8824691772461
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 100,
+      "predicted_ramping": 96.17407989501953
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 0,
+      "predicted_ramping": 96.17407989501953
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 100,
+      "predicted_ramping": 96.17407989501953
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 200,
+      "predicted_ramping": 96.17407989501953
+    }
+  ],
+  "negative_prediction": false
+}

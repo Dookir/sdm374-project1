@@ -1,0 +1,52 @@
+{
+  "predicted_ramping": 108.55233001708984,
+  "start_count": 101,
+  "history": [
+    {
+      "method": "projected_gradient",
+      "iteration": 0,
+      "predicted_ramping": 115.42872619628906
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 100,
+      "predicted_ramping": 108.68923950195312
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 200,
+      "predicted_ramping": 108.61121368408203
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 300,
+      "predicted_ramping": 108.56613159179688
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 400,
+      "predicted_ramping": 108.55499267578125
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 500,
+      "predicted_ramping": 108.55232238769531
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 0,
+      "predicted_ramping": 108.55232238769531
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 100,
+      "predicted_ramping": 108.55232238769531
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 200,
+      "predicted_ramping": 108.55232238769531
+    }
+  ],
+  "negative_prediction": false
+}

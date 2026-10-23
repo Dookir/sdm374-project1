@@ -1,0 +1,52 @@
+{
+  "predicted_ramping": 101.27615356445312,
+  "start_count": 101,
+  "history": [
+    {
+      "method": "projected_gradient",
+      "iteration": 0,
+      "predicted_ramping": 114.05465698242188
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 100,
+      "predicted_ramping": 101.95429229736328
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 200,
+      "predicted_ramping": 101.7442626953125
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 300,
+      "predicted_ramping": 101.61940002441406
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 400,
+      "predicted_ramping": 101.53245544433594
+    },
+    {
+      "method": "projected_gradient",
+      "iteration": 500,
+      "predicted_ramping": 101.2761459350586
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 0,
+      "predicted_ramping": 101.2761459350586
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 100,
+      "predicted_ramping": 101.2761459350586
+    },
+    {
+      "method": "projected_adam",
+      "iteration": 200,
+      "predicted_ramping": 101.2761459350586
+    }
+  ],
+  "negative_prediction": false
+}

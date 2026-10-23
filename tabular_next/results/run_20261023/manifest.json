@@ -1,0 +1,155 @@
+{
+  "selection": "lowest own predicted_ramping",
+  "target": "original train.csv ramping",
+  "configs": {
+    "res_periodic128": {
+      "family": "resmlp",
+      "embedding": "periodic",
+      "d_embedding": 8,
+      "width": 128,
+      "blocks": 2,
+      "dropout": 0.0,
+      "lr": 0.001,
+      "wd": 0.001
+    },
+    "res_ple128": {
+      "family": "resmlp",
+      "embedding": "ple",
+      "d_embedding": 8,
+      "width": 128,
+      "blocks": 2,
+      "dropout": 0.05,
+      "lr": 0.001,
+      "wd": 0.001
+    },
+    "res_periodic256": {
+      "family": "resmlp",
+      "embedding": "periodic",
+      "d_embedding": 16,
+      "width": 256,
+      "blocks": 3,
+      "dropout": 0.05,
+      "lr": 0.0003,
+      "wd": 0.01
+    },
+    "tabm_raw128_k8": {
+      "family": "tabm",
+      "embedding": "none",
+      "d_embedding": 8,
+      "width": 128,
+      "blocks": 2,
+      "dropout": 0.1,
+      "k": 8,
+      "lr": 0.001,
+      "wd": 0.001
+    },
+    "tabm_ple128_k16": {
+      "family": "tabm",
+      "embedding": "ple",
+      "d_embedding": 8,
+      "width": 128,
+      "blocks": 2,
+      "dropout": 0.1,
+      "k": 16,
+      "lr": 0.001,
+      "wd": 0.001
+    },
+    "tabm_periodic256_k16": {
+      "family": "tabm",
+      "embedding": "periodic",
+      "d_embedding": 16,
+      "width": 256,
+      "blocks": 2,
+      "dropout": 0.1,
+      "k": 16,
+      "lr": 0.0003,
+      "wd": 0.01
+    }
+  },
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "epochs": 800,
+  "checkpoints": [
+    50,
+    150,
+    400,
+    800
+  ],
+  "training": "normalized per-head MSE; heads averaged only for inference/search; AdamW with cosine schedule",
+  "gpu_uuid": "GPU-35f69b9c-b353-5b79-ba33-a0fb1c023c43",
+  "cuda_device_count": 1,
+  "protected_files": {
+    "Lab6/requirements.txt": "2be42120a663f20346fff73f7b7fc20fa73ed8af14f2c0047b264a7855e4aafa",
+    "Lab6/README.md": "d347d24340df9ecdb38b72a37a795cc9748ce9568041c54143a393c022443355",
+    "Lab6/baseline.py": "7a73929d4342759623fc48e28427927a9d653ad7eb711cdffee1c1b458e82a1c",
+    "Lab6/weights.json": "d2d1d2b00203ca739462caa35d0efe29f59c8671d4af04effac4d8d054c0178e",
+    "Lab6/model.npz": "fe7c242f56f36f3a96c79f332e56af39c68b69ea0c41e169cc8cd109231ca05e",
+    "Lab6/dataset_same8/manifest.json": "ba0c8f559c4d744bb670ead387b8585c2adb5ace35c616577093ea2fce16504f",
+    "Lab6/dataset_same8/train.csv": "877b5f8ee265245dd693148a5d7b11f28f48b426e43ac3ac1be8b7a934249023",
+    "Lab6/dataset_same8/README.md": "4688cbb117d583c1acd9ab5e29d20c865ab93bb2f162d4f36536ba244a704d2c",
+    "neural_baseline/retained/manifest.json": "56cc7bce5371c6b6ae6e7fdabe4cbd72f69979cae13cbe44f05e336ebbbbab85",
+    "neural_baseline/retained/relu_1024_512_256/model.pt": "c3864f3832dd413c98bf2935a866050717592e8e00f7ed7032bc66584e992bc6",
+    "neural_baseline/retained/relu_1024_512_256/search.json": "81b020d31c3335578e11df15b516afff2013d2efc358a23270f8cc0ead61f88b",
+    "neural_baseline/retained/relu_1024_512_256/weights.json": "4f02cc5d65d0b7176a0946fa3765cf1d467b240b84a6bce563c32d1ad099a80c",
+    "neural_baseline/retained/relu_1024_512_256/training_history.json": "09b6c2d3bb2b0177bb9c19ddae76264824e6ed639330e833f53f419100459539",
+    "neural_baseline/retained/relu_1024_512_256/selection.json": "c02265a687799869fa7a0bb35d4b40359a73699f9db502bf1b68642d4a7e3960",
+    "neural_baseline/retained/relu_128_64/model.pt": "1b0b1e3503ef2a711d56a69885bcb2cf88729ccfd13d5797350313cb69d6d391",
+    "neural_baseline/retained/relu_128_64/search.json": "bbcc0a6e1fa405754aad22b663b45c06f8c90fbdca918d76e4931939fa4cf2d7",
+    "neural_baseline/retained/relu_128_64/weights.json": "e0da774d1d3bc681da50cf1686f63f67c34a4303c9e40e29d91d46b4cd78ea61",
+    "neural_baseline/retained/relu_128_64/training_history.json": "ff724a9a3ef82175a6ff054060c64443619fe8d26f042e34d5c6a32da0b16ca3",
+    "neural_baseline/retained/relu_128_64/selection.json": "55d47186a981881062373efbd8f7e1b83abfb533feadfd536182a701f67a260e",
+    "neural_baseline/retained/relu_64_32/model.pt": "027fc62a6d7a224f15b3cd8677125021a3308e72ebe494b612a9c20478f828bb",
+    "neural_baseline/retained/relu_64_32/search.json": "b52b9561efd7b79c5970b78687ce896f9808135dfc100b59951357299abc67c7",
+    "neural_baseline/retained/relu_64_32/weights.json": "60a7831de7285dc59ffab236a83ba2fc2ebb64e7cf31b3bd28f358c7815c3264",
+    "neural_baseline/retained/relu_64_32/training_history.json": "7389d56bc4e8bfe347cc2c45ac220cd8109c084827e7f335f4c784bf4848449d",
+    "neural_baseline/retained/relu_64_32/selection.json": "de9a4fbdb39afdee07b53d453a8e114940b80c4c82ff0151c9980720a23b19ef",
+    "neural_baseline/retained/relu_256_128/model.pt": "e33112ad245124e8d89eb9227d2adf1dda4e31e98be512816077958821092219",
+    "neural_baseline/retained/relu_256_128/search.json": "45f97dc207a5952c1ebb2966b319f815ac2beb88bf5329980ff16b2a5880313a",
+    "neural_baseline/retained/relu_256_128/weights.json": "c1e57317e840d54e5f1ec0025d3e79df487c9ed51b7ab9b85608153b58f547d3",
+    "neural_baseline/retained/relu_256_128/training_history.json": "0e2d8ff0a629a02ea8e71c2f01c98c38482813b0b0b63e990549780104995450",
+    "neural_baseline/retained/relu_256_128/selection.json": "223630dec1ada71d31f2b2e59105525a5b0cda0609aef5e0b83ce9969fac4d17",
+    "neural_baseline/retained/relu_512_256_128/model.pt": "1d9efd5fb2d56c5e00b0364ebfa1c7d0c80809ddc87c163a6471a79f71927703",
+    "neural_baseline/retained/relu_512_256_128/search.json": "e732b2cf3488b5386ea7c5c4b107f6fcabb614907dc76439777fb8bca5d1a5ca",
+    "neural_baseline/retained/relu_512_256_128/weights.json": "195255f673955de30765491932aae58493519168481b4ce6e0f724a0684113cb",
+    "neural_baseline/retained/relu_512_256_128/training_history.json": "18365e3ee10a5ec972df42f3f419cae00284d48811801fc08703e90df7f0f4ab",
+    "neural_baseline/retained/relu_512_256_128/selection.json": "f02e064cba49894cf5fc40e82c59560620676b28e749ef9a1867f30f5d4f4f21"
+  },
+  "source_sha256": {
+    "tabular_next/run.py": "2c1870316b36de0beb98eae5394b720909206f483838bd0ec77ee008319ff813",
+    "tabular_next/check.py": "4305c9de48d3ec2ad83b4c24a20992ce10d80e07ccf427d3ebae5514c0731af8",
+    "tabular_next/predict.py": "979837b8622bac8f8cfad2087ad97e1f5edb6a88787cf0d3104d3bc342170274",
+    "tabular_next/test_models.py": "3240c63aca207a1ad1030575c731a2bad899dd144f5f64b7c60db1619a56b8b6",
+    "tabular_next/models.py": "e97aea936271086295a6f9c840116f6527c143a7b4ba94fc743b806ab8018a93"
+  },
+  "versions": {
+    "torch": "2.5.1+cu121",
+    "tabm": "0.0.3",
+    "rtdl-num-embeddings": "0.0.12"
+  },
+  "reference_scores": [
+    {
+      "name": "relu_64_32",
+      "predicted_ramping": 40.701690673828125
+    },
+    {
+      "name": "relu_128_64",
+      "predicted_ramping": 53.97471618652344
+    },
+    {
+      "name": "relu_256_128",
+      "predicted_ramping": 60.56837463378906
+    },
+    {
+      "name": "relu_512_256_128",
+      "predicted_ramping": 69.556396484375
+    },
+    {
+      "name": "relu_1024_512_256",
+      "predicted_ramping": 71.96004486083984
+    }
+  ],
+  "expected_candidates": 72
+}

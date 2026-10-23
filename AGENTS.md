@@ -11,3 +11,5 @@
 - No passwords, credentials, private keys, environments, or runtime caches in Git. Repository SSH key remains outside checkout.
 
 - Current neural run completed: neural_baseline/results/first_run_20261023. Twelve trials and 49 fixed-teacher scores. Lowest neural candidate is mlp128_relu_2027_e100 at 88.140128, baseline 75.895701 remains incumbent. Do not describe this neural round as beating baseline. Best neural artifacts are separate from recommended submission weights.
+
+- Latest request expands neural parameters. Active expanded entry: neural_baseline.expanded_run; see EXPANDED_PLAN.md. Twelve configurations x three seeds, 1200 epochs, 4 checkpoints, fixed teacher scoring only; preserve both original baseline and previous best neural score as incumbents. One initially idle GPU only.

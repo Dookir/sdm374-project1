@@ -1,0 +1,144 @@
+{
+  "records": [
+    {
+      "name": "relu_64_32",
+      "family": "mlp",
+      "loader": "old",
+      "checkpoint": "neural_baseline/retained/relu_64_32/model.pt",
+      "weights": "neural_baseline/retained/relu_64_32/weights.json",
+      "previous_score": 40.701690673828125
+    },
+    {
+      "name": "relu_128_64",
+      "family": "mlp",
+      "loader": "old",
+      "checkpoint": "neural_baseline/retained/relu_128_64/model.pt",
+      "weights": "neural_baseline/retained/relu_128_64/weights.json",
+      "previous_score": 53.97471618652344
+    },
+    {
+      "name": "relu_256_128",
+      "family": "mlp",
+      "loader": "old",
+      "checkpoint": "neural_baseline/retained/relu_256_128/model.pt",
+      "weights": "neural_baseline/retained/relu_256_128/weights.json",
+      "previous_score": 60.56837463378906
+    },
+    {
+      "name": "relu_512_256_128",
+      "family": "mlp",
+      "loader": "old",
+      "checkpoint": "neural_baseline/retained/relu_512_256_128/model.pt",
+      "weights": "neural_baseline/retained/relu_512_256_128/weights.json",
+      "previous_score": 69.556396484375
+    },
+    {
+      "name": "relu_1024_512_256",
+      "family": "mlp",
+      "loader": "old",
+      "checkpoint": "neural_baseline/retained/relu_1024_512_256/model.pt",
+      "weights": "neural_baseline/retained/relu_1024_512_256/weights.json",
+      "previous_score": 71.96004486083984
+    },
+    {
+      "name": "res_periodic128",
+      "family": "resmlp",
+      "loader": "new",
+      "checkpoint": "tabular_next/results/run_20261023/models/res_periodic128_2028/epoch50.pt",
+      "weights": "tabular_next/results/run_20261023/weights/res_periodic128_2028_e50.json",
+      "previous_score": 106.86068725585938,
+      "original_candidate": "res_periodic128_2028_e50"
+    },
+    {
+      "name": "res_ple128",
+      "family": "resmlp",
+      "loader": "new",
+      "checkpoint": "tabular_next/results/run_20261023/models/res_ple128_2028/epoch150.pt",
+      "weights": "tabular_next/results/run_20261023/weights/res_ple128_2028_e150.json",
+      "previous_score": 106.80770874023438,
+      "original_candidate": "res_ple128_2028_e150"
+    },
+    {
+      "name": "res_periodic256",
+      "family": "resmlp",
+      "loader": "new",
+      "checkpoint": "tabular_next/results/run_20261023/models/res_periodic256_2026/epoch50.pt",
+      "weights": "tabular_next/results/run_20261023/weights/res_periodic256_2026_e50.json",
+      "previous_score": 105.67945861816406,
+      "original_candidate": "res_periodic256_2026_e50"
+    },
+    {
+      "name": "tabm_raw128_k8",
+      "family": "tabm",
+      "loader": "new",
+      "checkpoint": "tabular_next/results/run_20261023/models/tabm_raw128_k8_2028/epoch50.pt",
+      "weights": "tabular_next/results/run_20261023/weights/tabm_raw128_k8_2028_e50.json",
+      "previous_score": 91.71012115478516,
+      "original_candidate": "tabm_raw128_k8_2028_e50"
+    },
+    {
+      "name": "tabm_ple128_k16",
+      "family": "tabm",
+      "loader": "new",
+      "checkpoint": "tabular_next/results/run_20261023/models/tabm_ple128_k16_2026/epoch50.pt",
+      "weights": "tabular_next/results/run_20261023/weights/tabm_ple128_k16_2026_e50.json",
+      "previous_score": 98.12193298339844,
+      "original_candidate": "tabm_ple128_k16_2026_e50"
+    },
+    {
+      "name": "tabm_periodic256_k16",
+      "family": "tabm",
+      "loader": "new",
+      "checkpoint": "tabular_next/results/run_20261023/models/tabm_periodic256_k16_2027/epoch400.pt",
+      "weights": "tabular_next/results/run_20261023/weights/tabm_periodic256_k16_2027_e400.json",
+      "previous_score": 98.11616516113281,
+      "original_candidate": "tabm_periodic256_k16_2027_e400"
+    }
+  ],
+  "protected_files": {
+    "neural_baseline/retained/relu_64_32/model.pt": "027fc62a6d7a224f15b3cd8677125021a3308e72ebe494b612a9c20478f828bb",
+    "neural_baseline/retained/relu_64_32/weights.json": "60a7831de7285dc59ffab236a83ba2fc2ebb64e7cf31b3bd28f358c7815c3264",
+    "neural_baseline/retained/relu_128_64/model.pt": "1b0b1e3503ef2a711d56a69885bcb2cf88729ccfd13d5797350313cb69d6d391",
+    "neural_baseline/retained/relu_128_64/weights.json": "e0da774d1d3bc681da50cf1686f63f67c34a4303c9e40e29d91d46b4cd78ea61",
+    "neural_baseline/retained/relu_256_128/model.pt": "e33112ad245124e8d89eb9227d2adf1dda4e31e98be512816077958821092219",
+    "neural_baseline/retained/relu_256_128/weights.json": "c1e57317e840d54e5f1ec0025d3e79df487c9ed51b7ab9b85608153b58f547d3",
+    "neural_baseline/retained/relu_512_256_128/model.pt": "1d9efd5fb2d56c5e00b0364ebfa1c7d0c80809ddc87c163a6471a79f71927703",
+    "neural_baseline/retained/relu_512_256_128/weights.json": "195255f673955de30765491932aae58493519168481b4ce6e0f724a0684113cb",
+    "neural_baseline/retained/relu_1024_512_256/model.pt": "c3864f3832dd413c98bf2935a866050717592e8e00f7ed7032bc66584e992bc6",
+    "neural_baseline/retained/relu_1024_512_256/weights.json": "4f02cc5d65d0b7176a0946fa3765cf1d467b240b84a6bce563c32d1ad099a80c",
+    "tabular_next/results/run_20261023/models/res_periodic128_2028/epoch50.pt": "eab707ef2461392546e9a50854412fb879e0105fc95842433d4882e95b1e32fd",
+    "tabular_next/results/run_20261023/weights/res_periodic128_2028_e50.json": "3556206c3be22859f3a4d53cb2bdf48e67c66c1142483900999b7e267759a66b",
+    "tabular_next/results/run_20261023/models/res_ple128_2028/epoch150.pt": "2abf9f253f04100577e0bda14552b31dffbfd700910967f00375021288c2879e",
+    "tabular_next/results/run_20261023/weights/res_ple128_2028_e150.json": "1c36a65c21293b945440b9f41dbf34e2ed41129538c4b92791096cd01d36f995",
+    "tabular_next/results/run_20261023/models/res_periodic256_2026/epoch50.pt": "0da1e7d7eb80cd88d3ccc3c46e67e82f6d9c82d1d71a632104cd9e825d94b4ea",
+    "tabular_next/results/run_20261023/weights/res_periodic256_2026_e50.json": "6d0fcedd87f621290124a642b4e84d7dacc59511ddbcb245fea8e9562438864f",
+    "tabular_next/results/run_20261023/models/tabm_raw128_k8_2028/epoch50.pt": "6a3e74d515ee8f196d7664be8eaa8514c66db88597eaa8dbe0fa1f2682366cfb",
+    "tabular_next/results/run_20261023/weights/tabm_raw128_k8_2028_e50.json": "f00924bfaf22c19a13312477d0e5f8672b90373829ff51493e921de11020e88c",
+    "tabular_next/results/run_20261023/models/tabm_ple128_k16_2026/epoch50.pt": "d3b349834b3ef1446033ca6b885adae2369d60982398903c8f4e30e92df19184",
+    "tabular_next/results/run_20261023/weights/tabm_ple128_k16_2026_e50.json": "f00924bfaf22c19a13312477d0e5f8672b90373829ff51493e921de11020e88c",
+    "tabular_next/results/run_20261023/models/tabm_periodic256_k16_2027/epoch400.pt": "f54b08481adf56182d4ddf9ec7c208dde87609f12c470aa9fd70d6cc4dd3db41",
+    "tabular_next/results/run_20261023/weights/tabm_periodic256_k16_2027_e400.json": "523baa6abeda162a1132b12b0856ee18152297b3e301115de2278a9a0bd6f469",
+    "Lab6/requirements.txt": "2be42120a663f20346fff73f7b7fc20fa73ed8af14f2c0047b264a7855e4aafa",
+    "Lab6/README.md": "d347d24340df9ecdb38b72a37a795cc9748ce9568041c54143a393c022443355",
+    "Lab6/baseline.py": "7a73929d4342759623fc48e28427927a9d653ad7eb711cdffee1c1b458e82a1c",
+    "Lab6/weights.json": "d2d1d2b00203ca739462caa35d0efe29f59c8671d4af04effac4d8d054c0178e",
+    "Lab6/model.npz": "fe7c242f56f36f3a96c79f332e56af39c68b69ea0c41e169cc8cd109231ca05e",
+    "Lab6/dataset_same8/manifest.json": "ba0c8f559c4d744bb670ead387b8585c2adb5ace35c616577093ea2fce16504f",
+    "Lab6/dataset_same8/train.csv": "877b5f8ee265245dd693148a5d7b11f28f48b426e43ac3ac1be8b7a934249023",
+    "Lab6/dataset_same8/README.md": "4688cbb117d583c1acd9ab5e29d20c865ab93bb2f162d4f36536ba244a704d2c"
+  },
+  "source_sha256": {
+    "weight_search/test_search.py": "536d7adddf2ebdb8694e2f447b928218063a10c1afd09103157d35314ee6039f",
+    "weight_search/run.py": "5e739c329cd7d418ca0cc1cfeb5864ac45f16abbc3480950309a1bec5f12aacd",
+    "weight_search/check.py": "da6681546455b80144b4bf758bd49655d641588c5dcb820d52f0a86c66615bad"
+  },
+  "selection": "lowest own predicted_ramping with fixed checkpoints",
+  "seed": 20261023,
+  "candidate_sampling": "65536 mixed random/local + 343 exact vertices + previous candidates + 50 measured best",
+  "pgd_iterations": 800,
+  "adam_iterations": 1000,
+  "slsqp_starts": 8,
+  "slsqp_iterations": 200,
+  "gpu_uuid": "GPU-35f69b9c-b353-5b79-ba33-a0fb1c023c43",
+  "cuda_device_count": 1
+}

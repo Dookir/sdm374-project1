@@ -1,0 +1,77 @@
+{
+  "name": "relu_64_32",
+  "family": "mlp",
+  "checkpoint": "neural_baseline/retained/relu_64_32/model.pt",
+  "checkpoint_sha256": "027fc62a6d7a224f15b3cd8677125021a3308e72ebe494b612a9c20478f828bb",
+  "before": 40.701690673828125,
+  "after": 40.49078369140625,
+  "improvement": 0.210906982421875,
+  "negative_prediction": false,
+  "weights": "weight_search/results/run_20261023/weights/relu_64_32.json",
+  "stages": [
+    {
+      "stage": "sampling",
+      "predicted_ramping": 40.69452667236328,
+      "evaluated": 65941
+    },
+    {
+      "stage": "projected_gradient",
+      "predicted_ramping": 40.505340576171875
+    },
+    {
+      "stage": "projected_adam",
+      "predicted_ramping": 40.51689910888672
+    },
+    {
+      "stage": "coordinate_transfer",
+      "predicted_ramping": 40.50532531738281,
+      "evaluated": 630
+    },
+    {
+      "stage": "slsqp",
+      "predicted_ramping": 40.49078369140625,
+      "runs": [
+        {
+          "success": true,
+          "predicted_ramping": 40.49078369140625,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 40.49078369140625,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 40.49079132080078,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 40.49078369140625,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 40.490928649902344,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 40.490814208984375,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 40.49078369140625,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 40.49079132080078,
+          "message": "Iteration limit reached"
+        }
+      ]
+    }
+  ]
+}

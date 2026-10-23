@@ -1,0 +1,934 @@
+{
+  "state": "complete",
+  "completed_models": 11,
+  "results": [
+    {
+      "name": "relu_64_32",
+      "family": "mlp",
+      "checkpoint": "neural_baseline/retained/relu_64_32/model.pt",
+      "checkpoint_sha256": "027fc62a6d7a224f15b3cd8677125021a3308e72ebe494b612a9c20478f828bb",
+      "before": 40.701690673828125,
+      "after": 40.49078369140625,
+      "improvement": 0.210906982421875,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/relu_64_32.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 40.69452667236328,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 40.505340576171875
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 40.51689910888672
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 40.50532531738281,
+          "evaluated": 630
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 40.49078369140625,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 40.49078369140625,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 40.49078369140625,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 40.49079132080078,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 40.49078369140625,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 40.490928649902344,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 40.490814208984375,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 40.49078369140625,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 40.49079132080078,
+              "message": "Iteration limit reached"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "relu_128_64",
+      "family": "mlp",
+      "checkpoint": "neural_baseline/retained/relu_128_64/model.pt",
+      "checkpoint_sha256": "1b0b1e3503ef2a711d56a69885bcb2cf88729ccfd13d5797350313cb69d6d391",
+      "before": 53.97471618652344,
+      "after": 53.81629943847656,
+      "improvement": 0.158416748046875,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/relu_128_64.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 53.973968505859375,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 53.82978820800781
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 53.87388610839844
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 53.82978820800781,
+          "evaluated": 630
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 53.816307067871094,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 53.816314697265625,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.816314697265625,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.816307067871094,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.816307067871094,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.816307067871094,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.86317443847656,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.816314697265625,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 53.816307067871094,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "relu_256_128",
+      "family": "mlp",
+      "checkpoint": "neural_baseline/retained/relu_256_128/model.pt",
+      "checkpoint_sha256": "e33112ad245124e8d89eb9227d2adf1dda4e31e98be512816077958821092219",
+      "before": 60.56837463378906,
+      "after": 60.546058654785156,
+      "improvement": 0.02231597900390625,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/relu_256_128.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 60.568389892578125,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 60.54656219482422
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 60.55308532714844
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 60.546546936035156,
+          "evaluated": 630
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 60.546058654785156,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 60.54607391357422,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 60.546058654785156,
+              "message": "Iteration limit reached"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "relu_512_256_128",
+      "family": "mlp",
+      "checkpoint": "neural_baseline/retained/relu_512_256_128/model.pt",
+      "checkpoint_sha256": "1d9efd5fb2d56c5e00b0364ebfa1c7d0c80809ddc87c163a6471a79f71927703",
+      "before": 69.556396484375,
+      "after": 69.54663848876953,
+      "improvement": 0.00975799560546875,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/relu_512_256_128.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 69.556396484375,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 69.54735565185547
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 69.55638885498047
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 69.54735565185547,
+          "evaluated": 1260
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 69.546630859375,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 69.54663848876953,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 69.54663848876953,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 69.546630859375,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 69.54663848876953,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 69.54663848876953,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 69.546630859375,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 69.54663848876953,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 69.54663848876953,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "relu_1024_512_256",
+      "family": "mlp",
+      "checkpoint": "neural_baseline/retained/relu_1024_512_256/model.pt",
+      "checkpoint_sha256": "c3864f3832dd413c98bf2935a866050717592e8e00f7ed7032bc66584e992bc6",
+      "before": 71.96004486083984,
+      "after": 71.95979309082031,
+      "improvement": 0.00025177001953125,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/relu_1024_512_256.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 71.96004486083984,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 71.9598159790039
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 71.96003723144531
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 71.95982360839844,
+          "evaluated": 630
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 71.95979309082031,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 71.95979309082031,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 71.95979309082031,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 71.95979309082031,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": false,
+              "predicted_ramping": 71.95979309082031,
+              "message": "Iteration limit reached"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 71.95979309082031,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 71.95980834960938,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 71.95980834960938,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 71.95980834960938,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "res_periodic128",
+      "family": "resmlp",
+      "checkpoint": "tabular_next/results/run_20261023/models/res_periodic128_2028/epoch50.pt",
+      "checkpoint_sha256": "eab707ef2461392546e9a50854412fb879e0105fc95842433d4882e95b1e32fd",
+      "before": 106.86067962646484,
+      "after": 106.85899353027344,
+      "improvement": 0.00168609619140625,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/res_periodic128.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 106.86067962646484,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 106.85899353027344
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 106.86067199707031
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 106.85899353027344,
+          "evaluated": 1260
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 106.8589859008789,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 106.8589859008789,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.8589859008789,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.85899353027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.85899353027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.85899353027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.85899353027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.85899353027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.85899353027344,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "res_ple128",
+      "family": "resmlp",
+      "checkpoint": "tabular_next/results/run_20261023/models/res_ple128_2028/epoch150.pt",
+      "checkpoint_sha256": "2abf9f253f04100577e0bda14552b31dffbfd700910967f00375021288c2879e",
+      "before": 106.80770874023438,
+      "after": 106.80705261230469,
+      "improvement": 0.0006561279296875,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/res_ple128.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 106.80770111083984,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 106.80703735351562
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 106.80766296386719
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 106.80703735351562,
+          "evaluated": 1260
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 106.80703735351562,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80704498291016,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 106.80703735351562,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "res_periodic256",
+      "family": "resmlp",
+      "checkpoint": "tabular_next/results/run_20261023/models/res_periodic256_2026/epoch50.pt",
+      "checkpoint_sha256": "0da1e7d7eb80cd88d3ccc3c46e67e82f6d9c82d1d71a632104cd9e825d94b4ea",
+      "before": 105.67945861816406,
+      "after": 105.65420532226562,
+      "improvement": 0.0252532958984375,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/res_periodic256.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 105.6759033203125,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 105.6541976928711
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 105.65473937988281
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 105.65420532226562,
+          "evaluated": 630
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 105.65420532226562,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 105.65420532226562,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tabm_raw128_k8",
+      "family": "tabm",
+      "checkpoint": "tabular_next/results/run_20261023/models/tabm_raw128_k8_2028/epoch50.pt",
+      "checkpoint_sha256": "6a3e74d515ee8f196d7664be8eaa8514c66db88597eaa8dbe0fa1f2682366cfb",
+      "before": 91.71011352539062,
+      "after": 91.71011352539062,
+      "improvement": 0.0,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/tabm_raw128_k8.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 91.71012115478516,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 91.71012115478516
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 91.71011352539062
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 91.71011352539062,
+          "evaluated": 1260
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 91.71011352539062,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 91.71012115478516,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tabm_ple128_k16",
+      "family": "tabm",
+      "checkpoint": "tabular_next/results/run_20261023/models/tabm_ple128_k16_2026/epoch50.pt",
+      "checkpoint_sha256": "d3b349834b3ef1446033ca6b885adae2369d60982398903c8f4e30e92df19184",
+      "before": 98.12193298339844,
+      "after": 98.12193298339844,
+      "improvement": 0.0,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/tabm_ple128_k16.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 98.12193298339844,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 98.12193298339844
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 98.12193298339844
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 98.12193298339844,
+          "evaluated": 630
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 98.12193298339844,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 98.12193298339844,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tabm_periodic256_k16",
+      "family": "tabm",
+      "checkpoint": "tabular_next/results/run_20261023/models/tabm_periodic256_k16_2027/epoch400.pt",
+      "checkpoint_sha256": "f54b08481adf56182d4ddf9ec7c208dde87609f12c470aa9fd70d6cc4dd3db41",
+      "before": 98.11616516113281,
+      "after": 97.40196228027344,
+      "improvement": 0.714202880859375,
+      "negative_prediction": false,
+      "weights": "weight_search/results/run_20261023/weights/tabm_periodic256_k16.json",
+      "stages": [
+        {
+          "stage": "sampling",
+          "predicted_ramping": 97.67202758789062,
+          "evaluated": 65941
+        },
+        {
+          "stage": "projected_gradient",
+          "predicted_ramping": 97.40250396728516
+        },
+        {
+          "stage": "projected_adam",
+          "predicted_ramping": 97.48854064941406
+        },
+        {
+          "stage": "coordinate_transfer",
+          "predicted_ramping": 97.40232849121094,
+          "evaluated": 3150
+        },
+        {
+          "stage": "slsqp",
+          "predicted_ramping": 97.40196228027344,
+          "runs": [
+            {
+              "success": true,
+              "predicted_ramping": 97.40196228027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.40196228027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.40196990966797,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.40196228027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.40196228027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.40369415283203,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.40196228027344,
+              "message": "Optimization terminated successfully"
+            },
+            {
+              "success": true,
+              "predicted_ramping": 97.4021987915039,
+              "message": "Optimization terminated successfully"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "best": {
+    "name": "relu_64_32",
+    "family": "mlp",
+    "checkpoint": "neural_baseline/retained/relu_64_32/model.pt",
+    "checkpoint_sha256": "027fc62a6d7a224f15b3cd8677125021a3308e72ebe494b612a9c20478f828bb",
+    "before": 40.701690673828125,
+    "after": 40.49078369140625,
+    "improvement": 0.210906982421875,
+    "negative_prediction": false,
+    "weights": "weight_search/results/run_20261023/weights/relu_64_32.json",
+    "stages": [
+      {
+        "stage": "sampling",
+        "predicted_ramping": 40.69452667236328,
+        "evaluated": 65941
+      },
+      {
+        "stage": "projected_gradient",
+        "predicted_ramping": 40.505340576171875
+      },
+      {
+        "stage": "projected_adam",
+        "predicted_ramping": 40.51689910888672
+      },
+      {
+        "stage": "coordinate_transfer",
+        "predicted_ramping": 40.50532531738281,
+        "evaluated": 630
+      },
+      {
+        "stage": "slsqp",
+        "predicted_ramping": 40.49078369140625,
+        "runs": [
+          {
+            "success": true,
+            "predicted_ramping": 40.49078369140625,
+            "message": "Optimization terminated successfully"
+          },
+          {
+            "success": true,
+            "predicted_ramping": 40.49078369140625,
+            "message": "Optimization terminated successfully"
+          },
+          {
+            "success": false,
+            "predicted_ramping": 40.49079132080078,
+            "message": "Iteration limit reached"
+          },
+          {
+            "success": false,
+            "predicted_ramping": 40.49078369140625,
+            "message": "Iteration limit reached"
+          },
+          {
+            "success": false,
+            "predicted_ramping": 40.490928649902344,
+            "message": "Iteration limit reached"
+          },
+          {
+            "success": false,
+            "predicted_ramping": 40.490814208984375,
+            "message": "Iteration limit reached"
+          },
+          {
+            "success": false,
+            "predicted_ramping": 40.49078369140625,
+            "message": "Iteration limit reached"
+          },
+          {
+            "success": false,
+            "predicted_ramping": 40.49079132080078,
+            "message": "Iteration limit reached"
+          }
+        ]
+      }
+    ]
+  },
+  "elapsed_seconds": 111.27449440211058,
+  "cuda_device_count": 1,
+  "gpu_uuid": "GPU-35f69b9c-b353-5b79-ba33-a0fb1c023c43",
+  "checkpoints_unchanged": true
+}

@@ -1,0 +1,77 @@
+{
+  "name": "relu_128_64",
+  "family": "mlp",
+  "checkpoint": "neural_baseline/retained/relu_128_64/model.pt",
+  "checkpoint_sha256": "1b0b1e3503ef2a711d56a69885bcb2cf88729ccfd13d5797350313cb69d6d391",
+  "before": 53.97471618652344,
+  "after": 53.81629943847656,
+  "improvement": 0.158416748046875,
+  "negative_prediction": false,
+  "weights": "weight_search/results/run_20261023/weights/relu_128_64.json",
+  "stages": [
+    {
+      "stage": "sampling",
+      "predicted_ramping": 53.973968505859375,
+      "evaluated": 65941
+    },
+    {
+      "stage": "projected_gradient",
+      "predicted_ramping": 53.82978820800781
+    },
+    {
+      "stage": "projected_adam",
+      "predicted_ramping": 53.87388610839844
+    },
+    {
+      "stage": "coordinate_transfer",
+      "predicted_ramping": 53.82978820800781,
+      "evaluated": 630
+    },
+    {
+      "stage": "slsqp",
+      "predicted_ramping": 53.816307067871094,
+      "runs": [
+        {
+          "success": true,
+          "predicted_ramping": 53.816314697265625,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.816314697265625,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.816307067871094,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.816307067871094,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.816307067871094,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.86317443847656,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.816314697265625,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 53.816307067871094,
+          "message": "Optimization terminated successfully"
+        }
+      ]
+    }
+  ]
+}

@@ -8,3 +8,5 @@
 - Lab6 teacher files, data and original baseline are immutable. baseline_restart/ is a historical regression reference, not the current neural selection criterion.
 - Old neural outputs/code are archived outside checkout; location is in the retained manifest. Earlier archives are in ../archive-before-baseline-restart-20261023. Archived policies are obsolete.
 - No credentials, private keys, environments or runtime caches in Git; repository SSH key stays outside checkout.
+
+- Authorized new training: tabular_next/ contains numerical-embedding ResMLP and official TabM, 6 configs x 3 seeds, 800 epochs, 72 own-prediction candidates. Keep retained five unchanged. TabM trains each head independently and averages heads only for inference/search. One idle GPU UUID only; background tmux plus quiet automation instead of live monitoring. See tabular_next/README.md.

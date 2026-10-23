@@ -14,3 +14,5 @@ CUDA_VISIBLE_DEVICES= python -m neural_baseline.retained --verify
 ```
 
 各网络用自身模型预测 ramping，越低越好。旧网络与重复实验已移出项目归档，位置见 retained/manifest.json。保留老师两次测试机会，未提交。
+
+新增实验：[数值编码残差MLP与TabM](tabular_next/README.md)，后台单卡训练；按自身预测ramping筛选，不替换现有五个网络。

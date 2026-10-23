@@ -10,3 +10,5 @@
 - No credentials, private keys, environments or runtime caches in Git; repository SSH key stays outside checkout.
 
 - Authorized new training: tabular_next/ contains numerical-embedding ResMLP and official TabM, 6 configs x 3 seeds, 800 epochs, 72 own-prediction candidates. Keep retained five unchanged. TabM trains each head independently and averages heads only for inference/search. One idle GPU UUID only; background tmux plus quiet automation instead of live monitoring. See tabular_next/README.md.
+
+- Latest request strengthens input-weight optimization only: weight_search/ evaluates 11 fixed checkpoints (five retained MLPs and six recent configurations), scores each with its own model, keeps original weights immutable, exports only non-regressing new candidates. See weight_search/README.md. Single idle GPU plus CPU refinement; quiet automation, no continuous tracking.

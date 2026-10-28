@@ -1,3 +1,5 @@
+> 历史结果：本文件记录旧的固定baseline预测对照，不代表当前方案排序规则。请先阅读[当前方法](../../../docs/WORKFLOW.md)与[最新结果](../../../docs/RESULTS.md)。
+
 # 第一轮：沿用原 baseline 程序（2026-10-23）
 
 所有候选均实际调用原 `Lab6/baseline.py optimize` 生成，再调用原 `predict` 评分。`provided_baseline` 行复测原权重，评分模型始终固定为原 `Lab6/model.npz`。

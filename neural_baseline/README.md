@@ -1,21 +1,34 @@
-# 保留的五种神经网络
+# 保留的五种MLP
 
-按自身预测 ramping 从低到高选取；相同隐藏层和激活函数只留一份。
+[首页](../README.md) · [快速开始](../docs/QUICKSTART.md) · [完整最新结果](../docs/RESULTS.md)
 
-|网络|种子|轮数|预测 ramping|
-|---|---:|---:|---:|
-|relu_64_32|2026|600|40.701691|
-|relu_128_64|2028|300|53.974716|
-|relu_256_128|2028|100|60.568375|
-|relu_512_256_128|2028|100|69.556396|
-|relu_1024_512_256|2026|50|71.960045|
+这些网络使用21个原始连续权重作为输入、ReLU隐藏层、一个ramping输出。表中省略输入21维和输出1维。每种结构只保留自身预测最低的一份检查点；不同种子、轮数或正则化版本合并到同一隐藏层/激活函数结构。
 
-每个 retained/<网络名>/ 内保留模型、3×7权重、选择记录、训练与搜索记录。
+## 原候选与加强寻优候选
+
+下表由现有结果记录生成。模型保持相同，只有控制权重不同：
+
+|网络隐藏层|种子|保留轮数|原权重预测|加强寻优后预测|
+|---|---:|---:|---:|---:|
+|64→32|2026|600|40.7017|**40.4908**|
+|128→64|2028|300|53.9747|53.8163|
+|256→128|2028|100|60.5684|60.5461|
+|512→256→128|2028|100|69.5564|69.5466|
+|1024→512→256|2026|50|71.9600|71.9598|
+
+## 文件和命令
+
+每个 `retained/<网络名>/` 保存 `model.pt`、原 `weights.json`、`selection.json`、训练历史与原寻优记录。`retained/manifest.json`列出结构、哈希和归档来源。加强寻优的新权重另存在 `../weight_search/results/run_20261023/weights/`，没有覆盖本目录的原权重。
+
+从仓库根目录执行，默认CPU：
 
 ```bash
-source server/activate.sh
-CUDA_VISIBLE_DEVICES= python -m neural_baseline.retained --verify
-CUDA_VISIBLE_DEVICES= python -m neural_baseline.retained --name relu_64_32
+# 预测并校验五组原候选：第一组为40.7017
+python -m neural_baseline.retained --verify
+# 同一个64→32模型加载新权重：40.4908
+python -m neural_baseline.retained --name relu_64_32 --weights weight_search/results/run_20261023/weights/relu_64_32.json
 ```
 
-无需GPU。--weights 可指定另一份3×7 JSON。旧实验归档位置见 retained/manifest.json。
+`--name`接受 `relu_64_32、relu_128_64、relu_256_128、relu_512_256_128、relu_1024_512_256`。`--weights`可传入另一份合法3×7 JSON，不传时使用模型目录内原候选。
+
+这里不提供旧MLP重训命令；当前可复现的是保存模型的预测与新的权重寻优。旧程序与大量中间结果已移出活动目录，归档位置保存在manifest中，也可从Git历史追溯。不要直接使用旧训练代码中的过时评分规则。

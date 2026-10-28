@@ -1,20 +1,54 @@
-# SDM374 Project 1 / Week7
+# SDM374 Project 1：三栋楼能源控制权重优化
 
-保留自身预测 ramping 最低的五种不同网络，每种仅保留一份模型和对应权重。详见 [五种网络](neural_baseline/README.md)。
+本项目使用第1–8周的2048组历史记录，学习“控制权重 → ramping”的关系，再固定模型，搜索让预测 ramping 更低的控制权重。
 
-- Lab6/：老师原始材料、2048条数据和二次岭回归 baseline，保持原样。
-- neural_baseline/：五种网络、权重、训练/搜索记录与CPU预测入口。
-- baseline_restart/：历史回归对照。
-- server/：服务器环境与依赖。
+**当前采用各模型自身预测的 `predicted_ramping` 作为离线方案比较的主要成绩，越低越好。最新最低分为 40.4908，来自隐藏层64→32的 ReLU MLP。** 实验已完成，当前没有后台训练或自动监控任务。文档更新：2026-10-28；结果来自2026-10-23的实验。
+
+## 第一次接触项目，从这里开始
+
+1. [快速开始](docs/QUICKSTART.md)：下载、安装、无需GPU复现40.4908。
+2. [任务、数据与评判方法](docs/WORKFLOW.md)：弄清训练、寻优、预测分别做什么。
+3. [最新结果和文件对应表](docs/RESULTS.md)：查看11个模型的前后分数，找到模型和权重。
+4. [服务器环境与单卡运行](server/README.md)：需要重新训练或加强寻优时再读。
+
+## 项目输入和输出
+
+- **输入**：三栋楼各7个控制权重，共21个数。每栋楼权重非负、总和为1。
+- **训练标签**：历史记录中八周平均 ramping。`candidate_id`只作编号，不输入模型。
+- **ramping**：三栋楼总净用电量的相邻小时变化绝对值之和，再取八周平均；越低表示曲线越平稳。
+- **交付文件**：一份3×7的控制权重JSON；训练好的模型 `.pt` 用于生成和预测这组权重。
+
+## 不训练，直接复现当前最好结果
+
+在仓库根目录、已安装依赖的Python环境中执行：
 
 ```bash
-cd /data/zengxiong/wuxinkai/sdm374-project1
-source server/activate.sh
-CUDA_VISIBLE_DEVICES= python -m neural_baseline.retained --verify
+python -m neural_baseline.retained --name relu_64_32 --weights weight_search/results/run_20261023/weights/relu_64_32.json
 ```
 
-各网络用自身模型预测 ramping，越低越好。旧网络与重复实验已移出项目归档，位置见 retained/manifest.json。保留老师两次测试机会，未提交。
+输出的 `predicted_ramping` 应约为 **40.4908**。环境安装见[快速开始](docs/QUICKSTART.md)。这个命令只在CPU加载保存的模型，不训练、不重新搜索。
 
-新增实验：[数值编码残差MLP与TabM](tabular_next/README.md)，后台单卡训练；按自身预测ramping筛选，不替换现有五个网络。
+## 仓库地图
 
-加强寻优：[weight_search](weight_search/README.md)，11个固定模型分别寻优并比较前后自身预测分，结果另存。
+|目录|用途|建议阅读对象|
+|---|---|---|
+|[Lab6/](Lab6/README.md)|老师原始baseline、2048条数据、原始模型和权重，保持原样|了解原始任务|
+|[neural_baseline/](neural_baseline/README.md)|保留的5种MLP、预测入口及原候选|复现现有模型|
+|[tabular_next/](tabular_next/README.md)|数值编码残差MLP、官方TabM、18次训练的结果|理解新增网络、重训|
+|[weight_search/](weight_search/README.md)|固定11个模型加强寻优，新权重和前后比较|查找最新候选、继续寻优|
+|[baseline_restart/](baseline_restart/README.md)|历史回归对照；其旧评分规则不作为当前规则|追溯实验历史|
+|[server/](server/README.md)|已有服务器环境、当前依赖、单卡运行方法|服务器计算|
+|[docs/](docs/QUICKSTART.md)|面向队友的入门、方法和结果说明|所有新成员|
+|SDM374_Project1_v3.pptx|课程项目课件|核对课程要求|
+
+## 复现时最容易混淆的三点
+
+- **模型参数与控制权重不同**：`.pt`保存网络；权重JSON保存三栋楼的21个控制系数。
+- **40.7017与40.4908都正确**：前者对应保留目录中的原权重，后者对应 `weight_search/` 中加强寻优后的新权重，使用的是同一个模型。
+- **各自预测，各自比较**：MLP用对应MLP；TabM用对应TabM并平均其分支。不要把所有候选都交给原 `Lab6/model.npz` 作为统一评分。
+
+预测分统一标为 `predicted_ramping`，不改写为已实测成绩；两次老师测试机会保留给最终候选。当前网络使用全部2048条数据训练，没有独立留出验证集；现有审计检查可复现性、文件一致性和权重合法性，具体边界见[方法说明](docs/WORKFLOW.md)。
+
+## 团队协作
+
+初次获取：`git clone https://github.com/Dookir/sdm374-project1.git`。后续更新前先用 `git status` 检查自己的修改，再用 `git pull --ff-only` 获取更新。讨论实验时注明模型名、检查点、权重文件和 `predicted_ramping`，不要只发一个分数。新实验使用新输出目录，不覆盖已有模型、数据和结果；需要推送代码的队友由仓库负责人添加协作权限。

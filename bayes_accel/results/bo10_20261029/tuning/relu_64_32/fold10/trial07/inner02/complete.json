@@ -1,0 +1,35 @@
+{
+  "epochs_run": 464,
+  "selected_epoch": 434,
+  "validation_mae_best": 5.952789052294314,
+  "actual_optimizer": {
+    "learning_rate": 0.0002939634539196902,
+    "weight_decay": 0.010476549454950903
+  },
+  "dropout": 0.2,
+  "scheduler_t_max": 600,
+  "execution_backend": "sync-reduced; independent process RNG",
+  "inner_fold": 2,
+  "n_validation": 615,
+  "validation_mae_cpu": 5.952789027483274,
+  "validation_abs_error_sum": 3660.965251902214,
+  "config": {
+    "hidden": [
+      64,
+      32
+    ],
+    "activation": "relu",
+    "dropout": 0.2,
+    "weight_decay": 0.010476549454950903,
+    "learning_rate": 0.0002939634539196902
+  },
+  "init_seed": 20271039,
+  "shuffle_seed": 20371039,
+  "worker_pid": 2349743,
+  "gpu_uuid": "GPU-e9b4fef6-be25-1e26-6b9a-753c8d74ef66",
+  "files": {
+    "validation_predictions.csv": "fb8cc5156751fcedda2975d9586512b1e112570ac655bdfd45387feedc7b193f",
+    "normalization.json": "220eb691fc19b21cd3b8cdf3a10f897454fc94af61d24a6ed5d618dfbb28843b",
+    "history.json": "7ccf916420e718f73f9f66bdc403c241951e9835058f48b47561fe5dcb02252c"
+  }
+}

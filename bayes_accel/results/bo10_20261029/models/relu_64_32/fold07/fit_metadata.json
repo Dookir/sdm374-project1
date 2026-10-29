@@ -1,0 +1,12 @@
+{
+  "epochs_run": 240,
+  "selected_epoch": 240,
+  "validation_mae_best": null,
+  "actual_optimizer": {
+    "learning_rate": 0.002866188582753155,
+    "weight_decay": 0.00020415368309401117
+  },
+  "dropout": 0.1,
+  "scheduler_t_max": 600,
+  "execution_backend": "sync-reduced; independent process RNG"
+}

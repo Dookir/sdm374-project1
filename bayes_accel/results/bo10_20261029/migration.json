@@ -1,0 +1,13 @@
+{
+  "source_snapshot": "/data/zengxiong/wuxinkai/archive-before-bayes-accel-20261029/serial_results",
+  "source_commit": "a9d3e6156ddc4cfc4fe3ce06298252157bf270e1",
+  "completed_counts": {
+    "models/*/fold*/training_complete.json": 16,
+    "models/*/fold*/search_complete.json": 16,
+    "tuning/*/fold*/complete.json": 16,
+    "tuning/*/fold*/trial*/complete.json": 494,
+    "tuning/*/fold*/trial*/inner*/complete.json": 1482
+  },
+  "unfinished_legacy_inner": "restart from original seeds; legacy process had no epoch checkpoint",
+  "execution": "same GPU UUID; three independent processes with private MPS; no hyperparameter or split changes"
+}

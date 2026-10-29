@@ -1,0 +1,42 @@
+[
+  {
+    "model": "relu_64_32",
+    "refit_epochs_mean": 243,
+    "refit_epochs_min": 167,
+    "refit_epochs_max": 285,
+    "dropout_counts": {
+      "0.2": 9,
+      "0.1": 1
+    },
+    "learning_rate_min": 0.0024391219451897978,
+    "learning_rate_max": 0.0029918781875207267,
+    "weight_decay_min": 0.00020415368309401117,
+    "weight_decay_max": 0.0264228026194107
+  },
+  {
+    "model": "relu_128_64",
+    "refit_epochs_mean": 215.5,
+    "refit_epochs_min": 131,
+    "refit_epochs_max": 293,
+    "dropout_counts": {
+      "0.2": 10
+    },
+    "learning_rate_min": 0.0020451568092796613,
+    "learning_rate_max": 0.002966972725684679,
+    "weight_decay_min": 0.00022945420112557006,
+    "weight_decay_max": 0.027047793904750206
+  },
+  {
+    "model": "relu_256_128",
+    "refit_epochs_mean": 203.2,
+    "refit_epochs_min": 170,
+    "refit_epochs_max": 275,
+    "dropout_counts": {
+      "0.2": 10
+    },
+    "learning_rate_min": 0.0018114816639067269,
+    "learning_rate_max": 0.0029385747453660994,
+    "weight_decay_min": 0.0008439756699815996,
+    "weight_decay_max": 0.02660972016246711
+  }
+]

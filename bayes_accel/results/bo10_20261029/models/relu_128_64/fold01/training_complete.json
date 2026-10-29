@@ -1,0 +1,32 @@
+{
+  "model": "relu_128_64",
+  "fold": 1,
+  "init_seed": 20261029,
+  "shuffle_seed": 20361029,
+  "epochs": 225,
+  "chosen_config": {
+    "hidden": [
+      128,
+      64
+    ],
+    "activation": "relu",
+    "dropout": 0.2,
+    "weight_decay": 0.027047793904750206,
+    "learning_rate": 0.002649198953987476
+  },
+  "inner_validation_mae": 5.008418364904219,
+  "n_train": 1843,
+  "train_mae": 1.949369385621169,
+  "train_abs_error_sum": 3592.6877776998144,
+  "n_test": 205,
+  "test_mae": 4.294753193686909,
+  "test_abs_error_sum": 880.4244047058164,
+  "files": {
+    "model.pt": "93898eb1161a300ff1937453283e335f2e835c0e204915d4d9a6d84f74f3247d",
+    "history.json": "c923f521a65e578749a8ee0b64de0ec4d2dfcf646dfca290ccc302f8aca11d35",
+    "train_predictions.csv": "aa4138ec4efaa12afe0b050a71af1b53dc5cc7a092d88aac3679ef2a416a4967",
+    "test_predictions.csv": "0a0089d0a333307120e2b216bbafb512c5b4190ec327ccd5029a2d5cae55a98e",
+    "selection.json": "b921e349f7bcd2a1ad0d68a4eae9306b610114225540b04151ccdd4490625be0",
+    "fit_metadata.json": "7b5acaec5f0d1a2a7740cc3ae8f31dbd7cbd4e815d016466ad9aea4db7954305"
+  }
+}

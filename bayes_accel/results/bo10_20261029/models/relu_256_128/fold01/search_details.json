@@ -1,0 +1,102 @@
+{
+  "before": 118.85346984863281,
+  "after": 98.59478759765625,
+  "improvement": 20.258682250976562,
+  "negative_prediction": false,
+  "reference": "lowest own prediction among fold-training rows",
+  "reference_weights": [
+    [
+      0.06631409538095429,
+      0.07744064530585308,
+      8.665263948435026e-06,
+      0.007877742874744112,
+      0.14501489110156612,
+      0.6988747420394509,
+      0.004469218033483113
+    ],
+    [
+      0.26499645659081233,
+      0.026658656139648913,
+      0.0411901545007603,
+      0.00171078470590961,
+      0.22324559994302376,
+      0.4012747527425578,
+      0.040923595377287264
+    ],
+    [
+      0.21806888877836514,
+      0.03517198406207881,
+      0.0002728003567680671,
+      0.0017925243042198463,
+      0.031210633193153512,
+      0.2292753224201775,
+      0.48420784688523716
+    ]
+  ],
+  "stages": [
+    {
+      "stage": "sampling",
+      "predicted_ramping": 100.75521850585938,
+      "candidates": 67773
+    },
+    {
+      "stage": "projected_gradient",
+      "predicted_ramping": 98.59730529785156
+    },
+    {
+      "stage": "projected_adam",
+      "predicted_ramping": 98.68701934814453
+    },
+    {
+      "stage": "coordinate_transfer",
+      "predicted_ramping": 98.59712982177734,
+      "candidates": 1260
+    },
+    {
+      "stage": "cpu_slsqp",
+      "predicted_ramping": 98.59478759765625,
+      "runs": [
+        {
+          "success": true,
+          "predicted_ramping": 98.59632873535156,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 98.59632873535156,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 98.59632873535156,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 98.59632873535156,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 98.59742736816406,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 98.59478759765625,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 98.59480285644531,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 99.15206146240234,
+          "message": "Optimization terminated successfully"
+        }
+      ]
+    }
+  ]
+}

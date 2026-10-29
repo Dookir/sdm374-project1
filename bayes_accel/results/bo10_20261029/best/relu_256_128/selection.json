@@ -1,0 +1,30 @@
+{
+  "model": "relu_256_128",
+  "fold": 3,
+  "init_seed": 20261031,
+  "shuffle_seed": 20361031,
+  "epochs": 172,
+  "chosen_config": {
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "dropout": 0.2,
+    "weight_decay": 0.013433485075211103,
+    "learning_rate": 0.0027338301808758157
+  },
+  "inner_validation_mae": 5.008558655680958,
+  "n_train": 1843,
+  "train_mae": 1.263846462154803,
+  "train_abs_error_sum": 2329.269029751302,
+  "n_test": 205,
+  "test_mae": 4.716399801723323,
+  "test_abs_error_sum": 966.8619593532812,
+  "search_before": 111.11331939697266,
+  "search_after": 86.39290618896484,
+  "negative_prediction": false,
+  "checkpoint": "bayes_accel/results/bo10_20261029/models/relu_256_128/fold03/model.pt",
+  "weights": "bayes_accel/results/bo10_20261029/models/relu_256_128/fold03/weights.json",
+  "selection": "lowest own predicted_ramping among ten Bayesian-tuned fold models"
+}

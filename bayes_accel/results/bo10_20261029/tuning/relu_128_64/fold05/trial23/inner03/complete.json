@@ -1,0 +1,32 @@
+{
+  "epochs_run": 250,
+  "selected_epoch": 220,
+  "validation_mae_best": 4.404570062709718,
+  "actual_optimizer": {
+    "learning_rate": 0.002913332228562052,
+    "weight_decay": 0.0010898645887012395
+  },
+  "dropout": 0.2,
+  "scheduler_t_max": 600,
+  "inner_fold": 3,
+  "n_validation": 614,
+  "validation_mae_cpu": 4.404570025432546,
+  "validation_abs_error_sum": 2704.4059956155834,
+  "config": {
+    "hidden": [
+      128,
+      64
+    ],
+    "activation": "relu",
+    "dropout": 0.2,
+    "weight_decay": 0.0010898645887012395,
+    "learning_rate": 0.002913332228562052
+  },
+  "init_seed": 20271035,
+  "shuffle_seed": 20371035,
+  "files": {
+    "validation_predictions.csv": "dbf26382be2f446451249551d813e188bef84fd9687db119e9e2672d9c0b2d17",
+    "normalization.json": "18420162042ea9a1488fbd63201f770d3fed904c3fab4eb55f6ad592d3a7284d",
+    "history.json": "69efb0da5f1d5234123d03c97db1eee031875e71724b8f92b3792ede4bcd33f9"
+  }
+}

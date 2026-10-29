@@ -64,3 +64,7 @@ python -m neural_baseline.retained --name relu_64_32 --weights weight_search/res
 |256→128|0.000193|5.889622|0.439818|
 
 各自模型寻优的最低预测ramping分别为 **41.0473、45.5226、58.8502**；没有低于原全数据模型的40.4908。MAE与候选预测分分开展示。完整记录见[本轮结果](cv_experiment/results/cv10_20261029/README.md)、[实验说明](cv_experiment/README.md)及[最新结果汇总](docs/RESULTS.md)。本轮没有额外独立最终测试集；OOF是10折留出预测。
+
+## 原配置加早停实验（2026-10-29）
+
+新增[earlystop_experiment/](earlystop_experiment/README.md)：三种MLP保留原超参数，在原外层十折内增加验证集，逐轮检查验证MAE、连续30轮不下降则早停并恢复最佳模型。实际约81%拟合/9%验证/10%测试，最多600轮；30次训练和30次仅用拟合子集的寻优。结果另存在 `earlystop_experiment/results/es10_20261029/`，原固定600轮结果保留，启动后由低频自动化检查。

@@ -1,0 +1,102 @@
+{
+  "before": 109.28812408447266,
+  "after": 66.0643310546875,
+  "improvement": 43.223793029785156,
+  "negative_prediction": false,
+  "reference": "lowest own prediction among fold-training rows",
+  "reference_weights": [
+    [
+      0.005231116064030555,
+      0.0020511575326647965,
+      0.03470080137942901,
+      0.3951477004598262,
+      0.025008282037814588,
+      0.3292347159197776,
+      0.20862622660645713
+    ],
+    [
+      0.17058236799543178,
+      0.047950984224858946,
+      0.003976765113359887,
+      0.22947385065457962,
+      0.0007277806686309825,
+      0.13490774976602082,
+      0.41238050157711786
+    ],
+    [
+      3.360587320082164e-05,
+      0.024837116976670213,
+      0.025073750401316944,
+      0.11807835719109598,
+      4.5031560911228656e-08,
+      0.7108792315581304,
+      0.12109789296802487
+    ]
+  ],
+  "stages": [
+    {
+      "stage": "sampling",
+      "predicted_ramping": 76.47649383544922,
+      "candidates": 67589
+    },
+    {
+      "stage": "projected_gradient",
+      "predicted_ramping": 66.06514739990234
+    },
+    {
+      "stage": "projected_adam",
+      "predicted_ramping": 66.09710693359375
+    },
+    {
+      "stage": "coordinate_transfer",
+      "predicted_ramping": 66.06514739990234,
+      "candidates": 1260
+    },
+    {
+      "stage": "cpu_slsqp",
+      "predicted_ramping": 66.06432342529297,
+      "runs": [
+        {
+          "success": true,
+          "predicted_ramping": 66.0643310546875,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 66.0643310546875,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 66.0643310546875,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 66.06432342529297,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 66.0643310546875,
+          "message": "Positive directional derivative for linesearch"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 66.0643310546875,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 66.06432342529297,
+          "message": "Optimization terminated successfully"
+        },
+        {
+          "success": true,
+          "predicted_ramping": 66.0643310546875,
+          "message": "Optimization terminated successfully"
+        }
+      ]
+    }
+  ]
+}

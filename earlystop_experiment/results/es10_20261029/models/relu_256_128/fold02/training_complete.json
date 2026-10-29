@@ -1,0 +1,28 @@
+{
+  "model": "relu_256_128",
+  "fold": 2,
+  "init_seed": 20261030,
+  "shuffle_seed": 20361030,
+  "max_epochs": 600,
+  "epochs_run": 56,
+  "selected_epoch": 26,
+  "validation_mae_best": 6.061358214560524,
+  "patience": 30,
+  "stop_reason": "validation_patience",
+  "n_train": 1658,
+  "train_mae": 3.5799001412819664,
+  "train_abs_error_sum": 5935.474434245501,
+  "n_validation": 185,
+  "validation_mae": 6.061358626960228,
+  "validation_abs_error_sum": 1121.3513459876422,
+  "n_test": 205,
+  "test_mae": 6.734644151177901,
+  "test_abs_error_sum": 1380.6020509914697,
+  "files": {
+    "model.pt": "05c8724bb80776511cb3499500a90b3494c6e367de240bd65568db12d5b6f23f",
+    "history.json": "c8b00831ce974184cfaa0ba5a325cd7a91e4c5713823466851c91274567698c3",
+    "train_predictions.csv": "9ad252778da5aa0dcfcc1d432d44ec9f2d3bbbca4c7a7a9ccb10a6c205eab35e",
+    "validation_predictions.csv": "35d5414034c26f7bdd245bddfdc778fb5b94383b86e70a7a9e6fa0bac9fef197",
+    "test_predictions.csv": "43e1ce8cb60c298e18283027c7054dea240f4579356a236bc7ab372d8d7ca0cf"
+  }
+}

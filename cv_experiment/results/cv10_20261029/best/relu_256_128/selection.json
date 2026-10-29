@@ -1,0 +1,19 @@
+{
+  "model": "relu_256_128",
+  "fold": 4,
+  "init_seed": 20261032,
+  "shuffle_seed": 20361032,
+  "epochs": 600,
+  "n_train": 1843,
+  "train_mae": 0.0002731805554944984,
+  "train_abs_error_sum": 0.5034717637763606,
+  "n_test": 205,
+  "test_mae": 6.250116432726867,
+  "test_abs_error_sum": 1281.2738687090077,
+  "search_before": 115.76498413085938,
+  "search_after": 58.85021209716797,
+  "negative_prediction": false,
+  "checkpoint": "cv_experiment/results/cv10_20261029/models/relu_256_128/fold04/model.pt",
+  "weights": "cv_experiment/results/cv10_20261029/models/relu_256_128/fold04/weights.json",
+  "selection": "lowest own predicted_ramping among ten fixed-epoch fold models"
+}

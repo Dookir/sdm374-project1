@@ -1,0 +1,102 @@
+{
+  "before": 114.71467590332031,
+  "after": 41.047271728515625,
+  "improvement": 73.66740417480469,
+  "negative_prediction": false,
+  "reference": "lowest own prediction among fold-training rows",
+  "reference_weights": [
+    [
+      0.18820192424833943,
+      0.06360466420059784,
+      0.20218812019519208,
+      0.2143194240587854,
+      0.033248929385831,
+      0.21981267379719566,
+      0.07862426411405848
+    ],
+    [
+      0.23588131097397017,
+      0.14100310763021828,
+      0.08205770080328545,
+      0.05530500458165258,
+      0.12974305755590243,
+      0.2875770324599347,
+      0.06843278599503624
+    ],
+    [
+      0.16258951876772473,
+      0.029255805470118926,
+      0.04458718056535448,
+      0.06959649096135122,
+      0.11341991678227721,
+      0.3471329386268938,
+      0.23341814882627956
+    ]
+  ],
+  "stages": [
+    {
+      "stage": "sampling",
+      "predicted_ramping": 71.44075775146484,
+      "candidates": 67774
+    },
+    {
+      "stage": "projected_gradient",
+      "predicted_ramping": 41.080291748046875
+    },
+    {
+      "stage": "projected_adam",
+      "predicted_ramping": 41.186798095703125
+    },
+    {
+      "stage": "coordinate_transfer",
+      "predicted_ramping": 41.074249267578125,
+      "candidates": 1890
+    },
+    {
+      "stage": "cpu_slsqp",
+      "predicted_ramping": 41.04724884033203,
+      "runs": [
+        {
+          "success": false,
+          "predicted_ramping": 41.047271728515625,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.04724884033203,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.047454833984375,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.04735565185547,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.24132537841797,
+          "message": "Positive directional derivative for linesearch"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.047515869140625,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.237205505371094,
+          "message": "Iteration limit reached"
+        },
+        {
+          "success": false,
+          "predicted_ramping": 41.225013732910156,
+          "message": "Iteration limit reached"
+        }
+      ]
+    }
+  ]
+}

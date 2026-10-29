@@ -1,0 +1,19 @@
+{
+  "model": "relu_256_128",
+  "fold": 10,
+  "init_seed": 20261038,
+  "shuffle_seed": 20361038,
+  "epochs": 600,
+  "n_train": 1844,
+  "train_mae": 0.00024033522250734173,
+  "train_abs_error_sum": 0.44317815030353813,
+  "n_test": 204,
+  "test_mae": 5.772971102931291,
+  "test_abs_error_sum": 1177.6861049979834,
+  "files": {
+    "model.pt": "63fdbb265b1fa402d50d11ba451b1e0fcdd5c4bf024051d5c84f9cef01f0deb7",
+    "history.json": "4caaf35c704029e1f4c443c5002e2a6b5d0aee3a3d6458a9de5fdd9c2ca74f2f",
+    "train_predictions.csv": "ed59f7e47dbce84b0c96d75e50e9e1ebd4cc3c826d27ef7d6d63caf7fceb1a4d",
+    "test_predictions.csv": "c77c3ee3ddd9790b64a0633a31e6babd48ea4fd7cb10b31b4f12b974272487d9"
+  }
+}

@@ -27,3 +27,6 @@ venv/
 # Training data, saved models and experimental results are intentionally versioned.
 
 neural_baseline/results/**/run.lock
+
+# Cross-validation runtime lock files
+cv_experiment/results/**/run.lock

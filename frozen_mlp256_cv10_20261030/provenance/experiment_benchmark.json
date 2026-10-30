@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "gpu_uuid": "GPU-e9b4fef6-be25-1e26-6b9a-753c8d74ef66",
+  "mps_pipe": "/tmp/sdm374-bayes-mps-20261029",
+  "benchmarks": [
+    {
+      "model": "relu_64_32",
+      "epochs_per_inner": 80,
+      "original_serial_seconds": 7.097659908235073,
+      "sync_reduced_serial_seconds": 7.029222972691059,
+      "three_inner_parallel_seconds": 2.386505275964737,
+      "speedup": 2.974080962534586,
+      "validation_histories_bitwise_equal": true,
+      "serial_model_states_bitwise_equal": true,
+      "parallel_model_states_bitwise_equal": true,
+      "selected_epochs_equal": true,
+      "worker_pids": [
+        2331614,
+        2331610,
+        2331613
+      ],
+      "gpu_uuids": [
+        "GPU-e9b4fef6-be25-1e26-6b9a-753c8d74ef66"
+      ]
+    },
+    {
+      "model": "relu_128_64",
+      "epochs_per_inner": 80,
+      "original_serial_seconds": 7.044233426451683,
+      "sync_reduced_serial_seconds": 6.85243833810091,
+      "three_inner_parallel_seconds": 2.3441258147358894,
+      "speedup": 3.005057741427309,
+      "validation_histories_bitwise_equal": true,
+      "serial_model_states_bitwise_equal": true,
+      "parallel_model_states_bitwise_equal": true,
+      "selected_epochs_equal": true,
+      "worker_pids": [
+        2331610,
+        2331614,
+        2331613
+      ],
+      "gpu_uuids": [
+        "GPU-e9b4fef6-be25-1e26-6b9a-753c8d74ef66"
+      ]
+    },
+    {
+      "model": "relu_256_128",
+      "epochs_per_inner": 80,
+      "original_serial_seconds": 7.123390384018421,
+      "sync_reduced_serial_seconds": 7.100409470498562,
+      "three_inner_parallel_seconds": 2.471368223428726,
+      "speedup": 2.8823670695804178,
+      "validation_histories_bitwise_equal": true,
+      "serial_model_states_bitwise_equal": true,
+      "parallel_model_states_bitwise_equal": true,
+      "selected_epochs_equal": true,
+      "worker_pids": [
+        2331613,
+        2331610,
+        2331614
+      ],
+      "gpu_uuids": [
+        "GPU-e9b4fef6-be25-1e26-6b9a-753c8d74ef66"
+      ]
+    }
+  ],
+  "total_speedup": 2.9526917167272644,
+  "gpu_epoch_resume_verified": true,
+  "gpu_epoch_resume_tested_model": "relu_64_32"
+}

@@ -1,5 +1,7 @@
 # Working instructions
 
+- Latest human decision (2026-10-30): prioritize held-out prediction MAE; ramping search is no longer the current focus. Freeze the existing ten Bayesian-tuned 256->128 fold models and their exact recipes, without retraining. The sealed standalone package is frozen_mlp256_cv10_20261030/. Do not modify its reference files or manifest. Teacher hardware is unknown; fixed seeds do not guarantee cross-platform bitwise retraining. Use supplied checkpoints for exact saved-model identity and report numerical differences honestly. This takes precedence over historical own-ramping selection instructions below.
+
 - Latest human decision: each model uses its OWN predicted ramping as the main offline score, lower is better. Compare and select using this score. Do not substitute the fixed baseline predictor, MAE/R2 or composite scores. Cross-model predictions are optional diagnostics. Do not use unavailable simulation to evade analysis; diagnose score behavior concretely.
 - Label score fields predicted_ramping. Preserve both teacher test opportunities for final candidates; no submissions without human authorization.
 - Current cleanup retains exactly five distinct network architectures, one selected checkpoint and candidate per architecture, ranked by lowest own prediction among existing candidates. See neural_baseline/retained/manifest.json. Keep models paired with their weights. Deduplicate seeds/epochs/regularization variants by hidden widths and activation.

@@ -1,0 +1,28 @@
+{
+  "epochs": 600,
+  "batch_size": 128,
+  "gradient_clip": 5.0,
+  "loss": "normalized MSE",
+  "patience": 30,
+  "min_delta": 0.0,
+  "eta_min_ratio": 0.01,
+  "trials": 30,
+  "inner_folds": 3,
+  "startup_trials": 10,
+  "learning_rate_range": [
+    0.0001,
+    0.003
+  ],
+  "weight_decay_range": [
+    0.0001,
+    0.03
+  ],
+  "dropout_choices": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "selection": "minimum sample-weighted inner best-validation MAE",
+  "refit": "full outer training; median selected inner epoch; cosine T_max remains 600"
+}

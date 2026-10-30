@@ -1,0 +1,110 @@
+{
+  "weights_feature_order": [
+    "b1_cost",
+    "b1_carbon",
+    "b1_peak",
+    "b1_discomfort",
+    "b1_degradation",
+    "b1_ramping",
+    "b1_resilience",
+    "b2_cost",
+    "b2_carbon",
+    "b2_peak",
+    "b2_discomfort",
+    "b2_degradation",
+    "b2_ramping",
+    "b2_resilience",
+    "b3_cost",
+    "b3_carbon",
+    "b3_peak",
+    "b3_discomfort",
+    "b3_degradation",
+    "b3_ramping",
+    "b3_resilience"
+  ],
+  "local_download_expected_sha256": "bcc1bb7ac10a3ace5f9d52ca386023f3d5c8b9251a6cc39fe973ecf085e93de4",
+  "submitted_weights_sha256": "bcc1bb7ac10a3ace5f9d52ca386023f3d5c8b9251a6cc39fe973ecf085e93de4",
+  "model_sha256": "ca1f5d9da334706f47b8c5078ef9204d43cb43d44077b15f48a679cf22cb23a0",
+  "candidate_predicted_ramping": 96.31106567382812,
+  "candidate_user_reported_evaluator_ramping": 120.21789791621268,
+  "candidate_error": 23.906832242384553,
+  "baseline_predicted_by_same_model": 111.30801391601562,
+  "baseline_user_reported_evaluator_ramping": 119.09161796723492,
+  "baseline_error": 7.783604051219299,
+  "actual_candidate_minus_baseline": 1.1262799489777535,
+  "candidate_near_zero_weights": 11,
+  "training_max_near_zero_weights": 3,
+  "training_median_near_zero_weights": 0.0,
+  "candidate_nearest_training_distance": 0.5053693717157037,
+  "training_nn_distance_percentile": 77.44140625,
+  "nn_distance_quantiles": {
+    "0.5": 0.3771130721177675,
+    "0.9": 0.5747833994988595,
+    "0.95": 0.6200333400207313,
+    "0.99": 0.7051719653678742,
+    "1.0": 0.8048853464293606
+  },
+  "nearest_training_rows": [
+    {
+      "candidate_id": "p01067",
+      "distance": 0.5053693717157037,
+      "actual": 141.27868327364558
+    },
+    {
+      "candidate_id": "p00262",
+      "distance": 0.6722030255082156,
+      "actual": 138.978318668087
+    },
+    {
+      "candidate_id": "p00473",
+      "distance": 0.6738849600647727,
+      "actual": 122.87519074068405
+    },
+    {
+      "candidate_id": "p01052",
+      "distance": 0.699976000628646,
+      "actual": 122.75632154516643
+    },
+    {
+      "candidate_id": "p00538",
+      "distance": 0.7045852465055202,
+      "actual": 136.8240494599595
+    },
+    {
+      "candidate_id": "p01263",
+      "distance": 0.7079358768212168,
+      "actual": 120.58864744703715
+    },
+    {
+      "candidate_id": "p01269",
+      "distance": 0.7082747101765771,
+      "actual": 120.11936511136264
+    },
+    {
+      "candidate_id": "p00985",
+      "distance": 0.7185246173404292,
+      "actual": 121.84364757331787
+    },
+    {
+      "candidate_id": "p00659",
+      "distance": 0.7213669638463566,
+      "actual": 124.3088543710328
+    },
+    {
+      "candidate_id": "p01892",
+      "distance": 0.7458186555319579,
+      "actual": 138.16739833087195
+    }
+  ],
+  "prior_oof_mae": 4.561498209482524,
+  "prior_oof_abs_error_quantiles": {
+    "0.5": 2.7844368072983343,
+    "0.9": 9.966783510069307,
+    "0.95": 14.212186135646325,
+    "0.99": 30.438387761044027,
+    "1.0": 73.75960702473822
+  },
+  "prior_oof_errors_at_least_current": 33,
+  "n_oof": 2048,
+  "real_evaluations_in_this_run": 0
+}

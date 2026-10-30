@@ -1,0 +1,76 @@
+{
+  "state": "complete",
+  "model": "final_mlp256/results/full_20261030/model.pt",
+  "model_sha256": "ca1f5d9da334706f47b8c5078ef9204d43cb43d44077b15f48a679cf22cb23a0",
+  "model_retrained": false,
+  "previous_best_predicted_ramping": 96.31106567382812,
+  "predicted_ramping": 96.31106567382812,
+  "improvement": 0.0,
+  "best_seed": 20261030,
+  "negative_prediction": false,
+  "new_searches": 7,
+  "total_searches": 10,
+  "searches": [
+    {
+      "seed": 20261030,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053693717157037
+    },
+    {
+      "seed": 20261031,
+      "predicted_ramping": 96.31107330322266,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053657417839462
+    },
+    {
+      "seed": 20261032,
+      "predicted_ramping": 96.31107330322266,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053692904557608
+    },
+    {
+      "seed": 20261033,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053693332360799
+    },
+    {
+      "seed": 20261034,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053693792818101
+    },
+    {
+      "seed": 20261035,
+      "predicted_ramping": 96.31107330322266,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053687977476836
+    },
+    {
+      "seed": 20261036,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053692367600368
+    },
+    {
+      "seed": 20261037,
+      "predicted_ramping": 96.31108093261719,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.505370320201851
+    },
+    {
+      "seed": 20261038,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053693463484779
+    },
+    {
+      "seed": 20261039,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053693962958551
+    }
+  ],
+  "global_optimum_proven": false
+}

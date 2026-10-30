@@ -1,0 +1,32 @@
+{
+  "state": "complete",
+  "model": "final_mlp256/results/full_20261030/model.pt",
+  "model_sha256": "ca1f5d9da334706f47b8c5078ef9204d43cb43d44077b15f48a679cf22cb23a0",
+  "model_retrained": false,
+  "predicted_ramping": 96.31106567382812,
+  "best_seed": 20261030,
+  "negative_prediction": false,
+  "nearest_training_distance": 0.5053693717157037,
+  "searches": [
+    {
+      "seed": 20261030,
+      "predicted_ramping": 96.31106567382812,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053693717157037
+    },
+    {
+      "seed": 20261031,
+      "predicted_ramping": 96.31107330322266,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053657417839462
+    },
+    {
+      "seed": 20261032,
+      "predicted_ramping": 96.31107330322266,
+      "before": 114.35331726074219,
+      "nearest_training_distance": 0.5053692904557608
+    }
+  ],
+  "global_optimum_proven": false,
+  "elapsed_seconds": 21.03118523955345
+}

@@ -1,0 +1,34 @@
+{
+  "state": "complete",
+  "model": "MLP 256->128",
+  "n_training_rows": 2048,
+  "training_mae": 1.564394403001479,
+  "independent_test_mae": null,
+  "selected_inner_validation_mae": 4.764419129295918,
+  "selected_config": {
+    "hidden": [
+      256,
+      128
+    ],
+    "activation": "relu",
+    "dropout": 0.2,
+    "weight_decay": 0.0003696879443531503,
+    "learning_rate": 0.0028352644117458233
+  },
+  "epochs": 148,
+  "init_seed": 20261029,
+  "shuffle_seed": 20361029,
+  "reference_cv_mae": 4.561498209482524,
+  "reference_cv_is_this_models_test_score": false,
+  "hyperparameter_trials": 30,
+  "internal_trainings": 90,
+  "ramping_optimization_performed": false,
+  "files": {
+    "model.pt": "ca1f5d9da334706f47b8c5078ef9204d43cb43d44077b15f48a679cf22cb23a0",
+    "history.json": "cb7b416258239ec035b3dbef940cb1ecfd853e331cfc9e186b90538b541cc8ff",
+    "fit_metadata.json": "cb987bcf936bca56adf98bf94fa8a5a8c665251e25281727ae0f4709734bbabd",
+    "selection.json": "feffa333408e5df8b838487bd7f211fab821a2c13666abd094dfa4a37d05275f",
+    "training_predictions.csv": "1db76dc1a8c3b083fbf801792a89c02832a6093fe21aa6ee66147138b46bcef0",
+    "normalization.json": "4261571b71bf24a98fadff793aa1e42b4b7f81d8abe069bb7c01488936b42b8b"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "models": 1,
+  "full_training_rows": 2048,
+  "internal_trainings": 90,
+  "configuration_trials": 30,
+  "full_data_normalization": true,
+  "internal_validation_only_selection": true,
+  "epochs_selected_before_refit": true,
+  "reference_prediction_reproduced": true,
+  "training_mae": 1.564394403001479,
+  "independent_test_mae": null,
+  "protected_old_files_unchanged": true,
+  "one_gpu": true
+}

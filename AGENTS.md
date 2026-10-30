@@ -1,5 +1,7 @@
 # Working instructions
 
+- Latest authorized one-off action (2026-10-30): final_mlp256_search/ optimizes only legal control weights against the frozen full-data final_mlp256/results/full_20261030/model.pt; no retraining or changing MAE-based model selection. Three own-model search predictions agree near96.311066; preserve this model/weight pairing and all frozen ten-fold files.
+
 - Latest authorized task (2026-10-30): final_mlp256/ selects hyperparameters using 30 TPE trials and three-fold internal validation on all 2048 rows, then refits ONE 256->128 model on all rows for the preselected median inner best epoch. Keep all frozen ten-fold files unchanged. Report full-fit training MAE separately from the historically measured OOF MAE 4.561498; no independent final test MAE and no ramping optimization. Use at most one initially idle GPU, parallelize only the three inner fits on that card, and pause without training if no card is idle.
 
 - Latest human decision (2026-10-30): prioritize held-out prediction MAE; ramping search is no longer the current focus. Freeze the existing ten Bayesian-tuned 256->128 fold models and their exact recipes, without retraining. The sealed standalone package is frozen_mlp256_cv10_20261030/. Do not modify its reference files or manifest. Teacher hardware is unknown; fixed seeds do not guarantee cross-platform bitwise retraining. Use supplied checkpoints for exact saved-model identity and report numerical differences honestly. This takes precedence over historical own-ramping selection instructions below.

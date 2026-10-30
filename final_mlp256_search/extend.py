@@ -39,11 +39,14 @@ def run(args):
  original.run(child)
  if not (out/'new_searches/complete.json').exists():
   dump(out/'status.json',dict(state='paused',reason='Selected GPU not idle; no extra search completed'));return
- extra=read(out/'new_searches/complete.json');combined=[*previous['searches'],*extra['searches']];best=min(combined,key=lambda r:r['predicted_ramping'])
+ extra=read(out/'new_searches/complete.json')
+ child_audit=read(out/'new_searches/audit.json');child_audit.pop('three_searches_reproduced',None);child_audit['verified_searches']=len(EXTRA_SEEDS);dump(out/'new_searches/audit.json',child_audit)
+ (out/'new_searches/README.md').write_text('# 追加的7个搜索种子\n\n种子20261033–20261039；固定同一全数据最终模型，七次搜索均经CPU复核。汇总最佳权重与原三个种子的比较见上级目录README。\n')
+ combined=[*previous['searches'],*extra['searches']];best=min(combined,key=lambda r:r['predicted_ramping'])
  source=PREVIOUS if best['seed'] not in EXTRA_SEEDS else out/'new_searches';shutil.copy2(source/str(best['seed'])/'weights.json',out/'weights.json')
  record=dict(state='complete',model=str(original.CHECKPOINT.relative_to(ROOT)),model_sha256=sha(original.CHECKPOINT),model_retrained=False,previous_best_predicted_ramping=previous['predicted_ramping'],predicted_ramping=best['predicted_ramping'],improvement=previous['predicted_ramping']-best['predicted_ramping'],best_seed=best['seed'],negative_prediction=best['predicted_ramping']<0,new_searches=7,total_searches=10,searches=combined,global_optimum_proven=False)
  dump(out/'complete.json',record);audit(out);dump(out/'status.json',dict(state='complete',predicted_ramping=best['predicted_ramping']))
- (out/'README.md').write_text('# 最终全数据MLP：追加7个寻优种子\n\n保留原3个种子，新加入20261033–20261039，共比较10次搜索。固定同一最终模型，不重新训练、不改参数。保留旧最优，只接受不退步的候选。每种子沿用约6.5万候选和64起点的投影梯度/Adam、权重转移、SLSQP。\n\n最低找到的自身预测ramping：**'+str(best['predicted_ramping'])+'**；原最低：'+str(previous['predicted_ramping'])+'；改善：'+str(record['improvement'])+'。并非全局最优证明。十次搜索均在CPU复核；原模型、旧候选、原十折冻结包不修改，未使用老师测试机会。\n\nweights.json为当前最优，complete.json列出全部10个种子的结果；new_searches/为追加7次的原始记录。其由旧执行器生成的内部README中固定“三种子”字样不适用于追加记录，准确数量以本README和manifest.extra_seeds为准。\n')
+ (out/'README.md').write_text('# 最终全数据MLP：追加7个寻优种子\n\n保留原3个种子，新加入20261033–20261039，共比较10次搜索。固定同一最终模型，不重新训练、不改参数。保留旧最优，只接受不退步的候选。每种子沿用约6.5万候选和64起点的投影梯度/Adam、权重转移、SLSQP。\n\n最低找到的自身预测ramping：**'+str(best['predicted_ramping'])+'**；原最低：'+str(previous['predicted_ramping'])+'；改善：'+str(record['improvement'])+'。并非全局最优证明。十次搜索均在CPU复核；原模型、旧候选、原十折冻结包不修改，未使用老师测试机会。\n\nweights.json为当前最优，complete.json列出全部10个种子的结果；new_searches/为追加7次的原始记录。\n')
  print('COMPLETE '+json.dumps(record),flush=True)
 
 def main():
